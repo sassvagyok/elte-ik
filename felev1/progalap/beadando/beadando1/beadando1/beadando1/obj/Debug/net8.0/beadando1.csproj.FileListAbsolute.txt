@@ -1,0 +1,14 @@
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\bin\Debug\net8.0\beadando1.exe
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\bin\Debug\net8.0\beadando1.deps.json
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\bin\Debug\net8.0\beadando1.runtimeconfig.json
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\bin\Debug\net8.0\beadando1.dll
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\bin\Debug\net8.0\beadando1.pdb
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\obj\Debug\net8.0\beadando1.GeneratedMSBuildEditorConfig.editorconfig
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\obj\Debug\net8.0\beadando1.AssemblyInfoInputs.cache
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\obj\Debug\net8.0\beadando1.AssemblyInfo.cs
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\obj\Debug\net8.0\beadando1.csproj.CoreCompileInputs.cache
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\obj\Debug\net8.0\beadando1.dll
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\obj\Debug\net8.0\refint\beadando1.dll
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\obj\Debug\net8.0\beadando1.pdb
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\obj\Debug\net8.0\beadando1.genruntimeconfig.cache
+M:\onedrivesajat\OneDrive\programozas\c#\beadando1\beadando1\obj\Debug\net8.0\ref\beadando1.dll

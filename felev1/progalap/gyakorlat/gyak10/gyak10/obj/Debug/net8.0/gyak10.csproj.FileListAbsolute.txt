@@ -1,0 +1,10 @@
+/home/matte/snap/onedrive-cli/12/OneDrive/programozas/c#/gyak10/gyak10/bin/Debug/net8.0/gyak10
+/home/matte/snap/onedrive-cli/12/OneDrive/programozas/c#/gyak10/gyak10/bin/Debug/net8.0/gyak10.dll
+/home/matte/snap/onedrive-cli/12/OneDrive/programozas/c#/gyak10/gyak10/bin/Debug/net8.0/gyak10.pdb
+/home/matte/snap/onedrive-cli/12/OneDrive/programozas/c#/gyak10/gyak10/obj/Debug/net8.0/gyak10.GeneratedMSBuildEditorConfig.editorconfig
+/home/matte/snap/onedrive-cli/12/OneDrive/programozas/c#/gyak10/gyak10/obj/Debug/net8.0/gyak10.AssemblyInfoInputs.cache
+/home/matte/snap/onedrive-cli/12/OneDrive/programozas/c#/gyak10/gyak10/obj/Debug/net8.0/gyak10.AssemblyInfo.cs
+/home/matte/snap/onedrive-cli/12/OneDrive/programozas/c#/gyak10/gyak10/obj/Debug/net8.0/gyak10.csproj.CoreCompileInputs.cache
+/home/matte/snap/onedrive-cli/12/OneDrive/programozas/c#/gyak10/gyak10/obj/Debug/net8.0/gyak10.dll
+/home/matte/snap/onedrive-cli/12/OneDrive/programozas/c#/gyak10/gyak10/obj/Debug/net8.0/refint/gyak10.dll
+/home/matte/snap/onedrive-cli/12/OneDrive/programozas/c#/gyak10/gyak10/obj/Debug/net8.0/gyak10.pdb

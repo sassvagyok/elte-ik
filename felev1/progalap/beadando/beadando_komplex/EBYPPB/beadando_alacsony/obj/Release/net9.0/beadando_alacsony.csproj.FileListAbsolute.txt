@@ -1,0 +1,14 @@
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\bin\Release\net9.0\beadando_alacsony.exe
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\bin\Release\net9.0\beadando_alacsony.deps.json
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\bin\Release\net9.0\beadando_alacsony.runtimeconfig.json
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\bin\Release\net9.0\beadando_alacsony.dll
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\bin\Release\net9.0\beadando_alacsony.pdb
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\obj\Release\net9.0\beadando_alacsony.GeneratedMSBuildEditorConfig.editorconfig
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\obj\Release\net9.0\beadando_alacsony.AssemblyInfoInputs.cache
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\obj\Release\net9.0\beadando_alacsony.AssemblyInfo.cs
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\obj\Release\net9.0\beadando_alacsony.csproj.CoreCompileInputs.cache
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\obj\Release\net9.0\beadando_alacsony.dll
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\obj\Release\net9.0\refint\beadando_alacsony.dll
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\obj\Release\net9.0\beadando_alacsony.pdb
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\obj\Release\net9.0\beadando_alacsony.genruntimeconfig.cache
+M:\onedrivesajat\OneDrive\ELTE\Targyak\felev1\Progalap\beadando\beadando_komplex\beadando_komplex\beadando_alacsony\obj\Release\net9.0\ref\beadando_alacsony.dll

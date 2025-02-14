@@ -1,0 +1,6 @@
+Get-ChildItem : ls megfelelője
+Get-Alias : parancsok aliasai (linux parancsok)
+Get-Help : man
+Get-Command : elérhető parancsok
+New-Item -ItemType Directory -Name Szamrend : fájl/mappa létrehozása
+Push-Location

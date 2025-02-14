@@ -1,0 +1,14 @@
+/home/matte/Desktop/csopzh/csopzh/bin/Debug/net8.0/csopzh
+/home/matte/Desktop/csopzh/csopzh/bin/Debug/net8.0/csopzh.deps.json
+/home/matte/Desktop/csopzh/csopzh/bin/Debug/net8.0/csopzh.runtimeconfig.json
+/home/matte/Desktop/csopzh/csopzh/bin/Debug/net8.0/csopzh.dll
+/home/matte/Desktop/csopzh/csopzh/bin/Debug/net8.0/csopzh.pdb
+/home/matte/Desktop/csopzh/csopzh/obj/Debug/net8.0/csopzh.GeneratedMSBuildEditorConfig.editorconfig
+/home/matte/Desktop/csopzh/csopzh/obj/Debug/net8.0/csopzh.AssemblyInfoInputs.cache
+/home/matte/Desktop/csopzh/csopzh/obj/Debug/net8.0/csopzh.AssemblyInfo.cs
+/home/matte/Desktop/csopzh/csopzh/obj/Debug/net8.0/csopzh.csproj.CoreCompileInputs.cache
+/home/matte/Desktop/csopzh/csopzh/obj/Debug/net8.0/csopzh.dll
+/home/matte/Desktop/csopzh/csopzh/obj/Debug/net8.0/refint/csopzh.dll
+/home/matte/Desktop/csopzh/csopzh/obj/Debug/net8.0/csopzh.pdb
+/home/matte/Desktop/csopzh/csopzh/obj/Debug/net8.0/csopzh.genruntimeconfig.cache
+/home/matte/Desktop/csopzh/csopzh/obj/Debug/net8.0/ref/csopzh.dll

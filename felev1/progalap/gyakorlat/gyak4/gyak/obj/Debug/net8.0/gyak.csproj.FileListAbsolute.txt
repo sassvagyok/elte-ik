@@ -1,0 +1,14 @@
+C:\Users\matep\RiderProjects\gyak\gyak\bin\Debug\net8.0\gyak.exe
+C:\Users\matep\RiderProjects\gyak\gyak\bin\Debug\net8.0\gyak.deps.json
+C:\Users\matep\RiderProjects\gyak\gyak\bin\Debug\net8.0\gyak.runtimeconfig.json
+C:\Users\matep\RiderProjects\gyak\gyak\bin\Debug\net8.0\gyak.dll
+C:\Users\matep\RiderProjects\gyak\gyak\bin\Debug\net8.0\gyak.pdb
+C:\Users\matep\RiderProjects\gyak\gyak\obj\Debug\net8.0\gyak.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matep\RiderProjects\gyak\gyak\obj\Debug\net8.0\gyak.AssemblyInfoInputs.cache
+C:\Users\matep\RiderProjects\gyak\gyak\obj\Debug\net8.0\gyak.AssemblyInfo.cs
+C:\Users\matep\RiderProjects\gyak\gyak\obj\Debug\net8.0\gyak.csproj.CoreCompileInputs.cache
+C:\Users\matep\RiderProjects\gyak\gyak\obj\Debug\net8.0\gyak.dll
+C:\Users\matep\RiderProjects\gyak\gyak\obj\Debug\net8.0\refint\gyak.dll
+C:\Users\matep\RiderProjects\gyak\gyak\obj\Debug\net8.0\gyak.pdb
+C:\Users\matep\RiderProjects\gyak\gyak\obj\Debug\net8.0\gyak.genruntimeconfig.cache
+C:\Users\matep\RiderProjects\gyak\gyak\obj\Debug\net8.0\ref\gyak.dll

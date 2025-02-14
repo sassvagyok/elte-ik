@@ -1,0 +1,14 @@
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\bin\Debug\net8.0\gyak2_2.exe
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\bin\Debug\net8.0\gyak2_2.deps.json
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\bin\Debug\net8.0\gyak2_2.runtimeconfig.json
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\bin\Debug\net8.0\gyak2_2.dll
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\bin\Debug\net8.0\gyak2_2.pdb
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\obj\Debug\net8.0\gyak2_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\obj\Debug\net8.0\gyak2_2.AssemblyInfoInputs.cache
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\obj\Debug\net8.0\gyak2_2.AssemblyInfo.cs
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\obj\Debug\net8.0\gyak2_2.csproj.CoreCompileInputs.cache
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\obj\Debug\net8.0\gyak2_2.dll
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\obj\Debug\net8.0\refint\gyak2_2.dll
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\obj\Debug\net8.0\gyak2_2.pdb
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\obj\Debug\net8.0\gyak2_2.genruntimeconfig.cache
+C:\Users\matep\source\repos\gyak2_2\gyak2_2\obj\Debug\net8.0\ref\gyak2_2.dll

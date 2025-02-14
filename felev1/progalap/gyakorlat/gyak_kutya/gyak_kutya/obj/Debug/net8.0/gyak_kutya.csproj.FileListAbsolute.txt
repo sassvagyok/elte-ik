@@ -1,0 +1,14 @@
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\bin\Debug\net8.0\gyak_kutya.exe
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\bin\Debug\net8.0\gyak_kutya.deps.json
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\bin\Debug\net8.0\gyak_kutya.runtimeconfig.json
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\bin\Debug\net8.0\gyak_kutya.dll
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\bin\Debug\net8.0\gyak_kutya.pdb
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\obj\Debug\net8.0\gyak_kutya.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\obj\Debug\net8.0\gyak_kutya.AssemblyInfoInputs.cache
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\obj\Debug\net8.0\gyak_kutya.AssemblyInfo.cs
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\obj\Debug\net8.0\gyak_kutya.csproj.CoreCompileInputs.cache
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\obj\Debug\net8.0\gyak_kutya.dll
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\obj\Debug\net8.0\refint\gyak_kutya.dll
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\obj\Debug\net8.0\gyak_kutya.pdb
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\obj\Debug\net8.0\gyak_kutya.genruntimeconfig.cache
+C:\Users\matep\OneDrive\programozas\c#\gyak_kutya\gyak_kutya\obj\Debug\net8.0\ref\gyak_kutya.dll

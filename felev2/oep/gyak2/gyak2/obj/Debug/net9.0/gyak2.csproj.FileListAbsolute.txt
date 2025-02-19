@@ -1,0 +1,10 @@
+/home/matte/snap/onedrive-cli/20/OneDrive/ELTE/felev2/oep/gyak2/gyak2/bin/Debug/net9.0/gyak2
+/home/matte/snap/onedrive-cli/20/OneDrive/ELTE/felev2/oep/gyak2/gyak2/bin/Debug/net9.0/gyak2.dll
+/home/matte/snap/onedrive-cli/20/OneDrive/ELTE/felev2/oep/gyak2/gyak2/bin/Debug/net9.0/gyak2.pdb
+/home/matte/snap/onedrive-cli/20/OneDrive/ELTE/felev2/oep/gyak2/gyak2/obj/Debug/net9.0/gyak2.GeneratedMSBuildEditorConfig.editorconfig
+/home/matte/snap/onedrive-cli/20/OneDrive/ELTE/felev2/oep/gyak2/gyak2/obj/Debug/net9.0/gyak2.AssemblyInfoInputs.cache
+/home/matte/snap/onedrive-cli/20/OneDrive/ELTE/felev2/oep/gyak2/gyak2/obj/Debug/net9.0/gyak2.AssemblyInfo.cs
+/home/matte/snap/onedrive-cli/20/OneDrive/ELTE/felev2/oep/gyak2/gyak2/obj/Debug/net9.0/gyak2.csproj.CoreCompileInputs.cache
+/home/matte/snap/onedrive-cli/20/OneDrive/ELTE/felev2/oep/gyak2/gyak2/obj/Debug/net9.0/gyak2.dll
+/home/matte/snap/onedrive-cli/20/OneDrive/ELTE/felev2/oep/gyak2/gyak2/obj/Debug/net9.0/refint/gyak2.dll
+/home/matte/snap/onedrive-cli/20/OneDrive/ELTE/felev2/oep/gyak2/gyak2/obj/Debug/net9.0/gyak2.pdb

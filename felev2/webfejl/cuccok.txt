@@ -1,0 +1,6 @@
+ol>(li>a[href="#" accesskey="$"])*4
+ul>(li>a[target="_blank"])*2
+<a href="#top">Ugrás fel</a>
+figure>img+figcaption
+
+alt + w == tagwrap extension

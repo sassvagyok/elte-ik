@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "tEFuDhgsQcY=",
+  "success": true,
+  "projectFilePath": "/home/matte/elte-ik/2/oep/gyakorlat/gyak6/Gyak6.csproj",
+  "expectedPackageFiles": [
+    "/home/matte/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/home/matte/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/home/matte/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.11/microsoft.netcore.app.host.linux-x64.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

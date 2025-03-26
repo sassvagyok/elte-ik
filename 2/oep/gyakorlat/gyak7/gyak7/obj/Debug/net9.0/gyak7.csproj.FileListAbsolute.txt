@@ -1,0 +1,15 @@
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/bin/Debug/net9.0/gyak7
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/bin/Debug/net9.0/gyak7.deps.json
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/bin/Debug/net9.0/gyak7.runtimeconfig.json
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/bin/Debug/net9.0/gyak7.dll
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/bin/Debug/net9.0/gyak7.pdb
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/obj/Debug/net9.0/gyak7.GeneratedMSBuildEditorConfig.editorconfig
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/obj/Debug/net9.0/gyak7.AssemblyInfoInputs.cache
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/obj/Debug/net9.0/gyak7.AssemblyInfo.cs
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/obj/Debug/net9.0/gyak7.csproj.CoreCompileInputs.cache
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/obj/Debug/net9.0/gyak7.sourcelink.json
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/obj/Debug/net9.0/gyak7.dll
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/obj/Debug/net9.0/refint/gyak7.dll
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/obj/Debug/net9.0/gyak7.pdb
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/obj/Debug/net9.0/gyak7.genruntimeconfig.cache
+/home/matte/elte-ik/2/oep/gyakorlat/gyak7/gyak7/obj/Debug/net9.0/ref/gyak7.dll

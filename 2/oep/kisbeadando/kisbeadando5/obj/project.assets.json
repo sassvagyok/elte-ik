@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\gyakorlat\\gyak5\\gyak5\\gyak5.csproj",
-      "projectName": "gyak5",
-      "projectPath": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\gyakorlat\\gyak5\\gyak5\\gyak5.csproj",
+      "projectUniqueName": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando5\\kisbeadando5\\kisbeadando5.csproj",
+      "projectName": "kisbeadando5",
+      "projectPath": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando5\\kisbeadando5\\kisbeadando5.csproj",
       "packagesPath": "C:\\Users\\matep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\gyakorlat\\gyak5\\gyak5\\obj\\",
+      "outputPath": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando5\\kisbeadando5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\matep\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,0 +1,5 @@
+/home/matte/elte-ik/2/oep/gyakorlat/gyak8_2/gyak8_2/obj/Debug/net9.0/gyak8_2.GeneratedMSBuildEditorConfig.editorconfig
+/home/matte/elte-ik/2/oep/gyakorlat/gyak8_2/gyak8_2/obj/Debug/net9.0/gyak8_2.AssemblyInfoInputs.cache
+/home/matte/elte-ik/2/oep/gyakorlat/gyak8_2/gyak8_2/obj/Debug/net9.0/gyak8_2.AssemblyInfo.cs
+/home/matte/elte-ik/2/oep/gyakorlat/gyak8_2/gyak8_2/obj/Debug/net9.0/gyak8_2.csproj.CoreCompileInputs.cache
+/home/matte/elte-ik/2/oep/gyakorlat/gyak8_2/gyak8_2/obj/Debug/net9.0/gyak8_2.sourcelink.json

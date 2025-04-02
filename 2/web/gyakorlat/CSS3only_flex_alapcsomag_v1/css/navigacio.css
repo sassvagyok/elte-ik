@@ -1,5 +1,12 @@
 /* kipozícionálás */
-
+#skiptocontent * {
+    position: absolute;
+    left: -10000px;
+    /* az elso ketto eleg legtobbszor */
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 /* KITÖLTENI - Blokkok elkerülése*/
 
 

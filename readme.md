@@ -3,10 +3,12 @@
 - [Objektumelvű programozás](2/oep/)
     - [Gyakorlat](2/oep/gyakorlat/)
     - [Kisbeadandó](2/oep/kisbeadando/)
+    - [Nagybeadandó](2/oep/nagybeadando/)
 - [Programozási nyelvek - Java](2/java/)
     - [Gyakorlat](2/java/gyakorlat/)
 - [Webfejlesztés](2/web/)
     - [Gyakorlat](2/web/gyakorlat/)
+    - [Modulzáró](2/web/modulzaro/)
     - [Beadandó](2/web/beadando/)
 
 ### 1. félév

@@ -6,6 +6,7 @@
     - [Nagybeadandó](2/oep/nagybeadando/)
 - [Programozási nyelvek - Java](2/java/)
     - [Gyakorlat](2/java/gyakorlat/)
+    - [CheckThat](2/java/checkthat/)
 - [Webfejlesztés](2/web/)
     - [Gyakorlat](2/web/gyakorlat/)
     - [Modulzáró](2/web/modulzaro/)

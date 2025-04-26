@@ -1,0 +1,25 @@
+body.large-text p,
+body.large-text ul li a,
+body.large-text th,
+body.large-text td,
+body.large-text caption,
+body.large-text figcaption,
+body.large-text label,
+body.large-text select,
+body.large-text input {
+    font-size: 1.8rem !important;
+}
+
+body.large-text img.textsize-icon {
+    width: 45px;
+}
+
+body.large-text h1 {
+    font-size: 3.8rem !important;
+}
+
+body.large-text h2,
+body.large-text h2.video,
+body.large-text p.alcim {
+    font-size: 2.8rem !important;
+}

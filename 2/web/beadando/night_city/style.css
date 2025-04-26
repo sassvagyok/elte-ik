@@ -2,34 +2,37 @@
 
 body {
     background-color: #050A0E !important;
+    font-family: "Play", sans-serif !important;
+    color: #FAFAFA !important;
+    font-weight: 400 !important;
+    font-size: 1.1rem !important;
 }
 
-.container-fluid.hatter {
+div.container-fluid.hatter {
     background-image: url("media/background.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
-.fa-bars, .fa-bars:visited {
+i.fa-bars, i.fa-bars:visited {
     color: #050A0E;
 }
 
-.navbar-toggler {
+button.navbar-toggler {
     border: none !important;
 }
 
-.navbar-toggler:focus {
+button.navbar-toggler:focus {
     outline: none !important;
     box-shadow: none !important;
 }
 
-.navbar {
+nav.navbar {
     background-color: #FCEE09 !important;
     margin-bottom: 15px;
 }
 
 nav ul li a {
-    font-family: "Play", sans-serif;
     font-size: 1.3rem !important;
     background-color: transparent !important;
     color: #494949 !important;
@@ -40,11 +43,15 @@ nav ul li a {
 
 nav ul a.active {
     color: #050A0E !important;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
 }
 
 nav ul li a:hover {
     color: #050A0E !important;
+}
+
+.textsize-icon {
+    width: 30px;
 }
 
 a:link {
@@ -71,23 +78,22 @@ div.osszefoglalo ul li a:hover {
     color: #CAC002;
 }
 
-h1 {
-    font-family: "Play", sans-serif;
+h1, h2 {
     font-weight: 700 !important;
-    font-size: 3.2rem !important;
-    color: #FCEE09 !important;
     text-align: center;
+}
+
+h1 {
+    color: #FCEE09 !important;
+    font-size: 3.2rem !important;
     margin-top: 10px !important;
     margin-bottom: 0 !important;
 }
 
 h2 {
-    font-family: "Play", sans-serif;
-    font-weight: 700 !important;
     color: #FAFAFA !important;
     font-size: 2.5rem !important;
-    text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 30px !important;
 }
 
 h2.video {
@@ -97,53 +103,23 @@ h2.video {
 
 h2.kiscim {
     padding-top: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 5px !important;
     font-size: 1.6rem !important;
 }
 
-figure {
-    margin-bottom: 0 !important;
-    color: #FAFAFA;
-}
-
-figcaption {
-    font-family: "Play", sans-serif;
-    color: #FAFAFA;
-    font-size: 1rem;
-    padding-top: 10px;
-}
-
-p {
-    font-family: "Play", sans-serif;
-    color: #FAFAFA;
-    font-size: 1.1rem;
-}
-
 p.alcim {
-    font-family: "Play", sans-serif;
     font-size: 2rem !important;
-    font-weight: 400 !important;
     text-align: center;
-    color: #FAFAFA !important;
     margin-bottom: 30px;
 }
 
 caption {
-    font-family: "Play", sans-serif;
+    font-size: 1rem;
     color: #FAFAFA !important;
-    font-size: 1.1rem;
     padding-bottom: 0 !important;
 }
 
-a.visually-hidden-focusable {
-    color: #FAFAFA;
-}
-
-div.kep img {
-    border: 2px solid #00F0FF;
-    box-shadow: 0 0 10px #00F0FF;
-}
-
+a.visually-hidden-focusable,
 div.promo a,
 div.promo a:link,
 div.promo a:visited {
@@ -154,27 +130,32 @@ div.promo {
     padding-bottom: 70px;
 }
 
-div.fooldal {
-    padding-top: 35px;
-    text-align: justify;
-    border: 2px solid #FCEE09;
+div.tile,
+div.osszefoglalo,
+div.leiras p,
+table {
+    border: 2px solid #FCEE09 !important;
     box-shadow: 0 0 10px #FCEE09;
 }
 
-div.fooldal img {
-    color: #FAFAFA;
+div.tile {
+    padding-top: 35px;
+    text-align: justify;
+}
+
+div.tile img {
     width: 90%;
     display: block;
     margin: 0 auto !important;
     border: 2px solid #00F0FF;
 }
 
-div.fooldal img:hover {
+div.tile img:hover {
     transition: 0.2s;
     box-shadow: 0 0 10px #00F0FF;
   }
 
-div.fooldal p {
+div.tile p {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 15px;
@@ -186,26 +167,24 @@ div.hatter {
     padding-bottom: 50px;
 }
 
-div.terkoz {
-    margin-top: 50px !important;
-}
-
-.ratio {
+div.ratio, div.kep img, div.carousel {
     border: 2px solid #00F0FF;
     box-shadow: 0 0 10px #00F0FF;
+}
+
+div.ratio {
     margin-bottom: 20px;
 }
 
 div.osszefoglalo {
     padding: 0px;
-    text-align: justify;
-    border: 2px solid #FCEE09;
-    box-shadow: 0 0 10px #FCEE09;
 }
 
-div.leiras p, div.osszefoglalo p {
+div.leiras p,
+div.osszefoglalo p {
     padding-left: 15px;
     padding-right: 15px;
+    text-align: justify;
 }
 
 div.osszefoglalo ul {
@@ -214,16 +193,20 @@ div.osszefoglalo ul {
 
 div.osszefoglalo ul li {
     text-align: left;
-    font-family: "Play", sans-serif;
-    font-size: 1.1rem !important;
 }
 
 div.leiras p {
     padding-top: 15px;
     padding-bottom: 15px;
-    text-align: justify;
-    border: 2px solid #FCEE09;
-    box-shadow: 0 0 10px #FCEE09;
+}
+
+figure {
+    margin-bottom: 0 !important;
+}
+
+figcaption {
+    font-size: 1rem;
+    padding-top: 10px;
 }
 
 footer {
@@ -253,14 +236,12 @@ hr:first-child {
     height: 3px;
 }
 
-.table-responsive {
+table.table-responsive {
     overflow: visible !important;
 }
 
 table {
     width: 100%;
-    border: 2px solid #FCEE09 !important;
-    box-shadow: 0 0 10px #FCEE09;
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
@@ -269,18 +250,12 @@ th {
     padding-left: 15px !important;
     width: 40%;
     background-color: transparent !important;
-    font-family: "Play", sans-serif;
     font-weight: 700;
     color: #FAFAFA !important;
-    font-size: 1.1rem;
 }
 
 td {
     background-color: transparent !important;
-    font-weight: 400;
-    font-size: 1.1rem;
-    font-family: "Play", sans-serif;
-    font-weight: 400;
     color: #FAFAFA !important;
     text-align: left;
 }
@@ -291,8 +266,21 @@ meter {
     border: 1px solid #00F0FF;
 }
 
-meter::-webkit-meter-bar, meter::-moz-meter-bar {
+meter::-webkit-meter-bar {
+    height: 17px;
+    background: transparent;
+}
+
+meter::-webkit-meter-optimum-value {
     background: #00F0FF;
+}
+
+meter::-moz-meter-bar {
+    background: #00F0FF;
+}
+
+div.terkoz {
+    margin-top: 50px !important;
 }
 
 div.urlap {
@@ -303,14 +291,6 @@ div.urlap {
 div.urlap p {
     font-size: 1rem;
     padding-left: 3px;
-    padding-right: 0;
-}
-
-label {
-    text-align: left;
-    font-family: "Play", sans-serif;
-    color: #FAFAFA;
-    font-size: 1.1rem;
 }
 
 input, textarea {
@@ -321,47 +301,45 @@ input, textarea {
     border: 2px solid #00F0FF;
 }
 
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
     accent-color: #00F0FF;
     margin-right: 5px;
 }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus,
+textarea:focus {
     outline: 1px solid #FAFAFA;
 }
 
-input[type="reset"], input[type="submit"] {
+input[type="reset"],
+input[type="submit"] {
     padding-top: 5px;
     padding-bottom: 5px;
-    font-family: "Play", sans-serif;
     color: #FAFAFA;
     font-size: 1.2rem;
     border-radius: 0;
     border: none;
     margin-bottom: 5px;
+    background-color: transparent;
 }
 
 input[type="reset"] {
-    background-color: transparent;
     border: 2px solid #FF003C;
-    
 }
 
 input[type="submit"] {
-    background-color: transparent;
     border: 2px solid #2bb801;
 }
 
 input[type="reset"]:hover {
     color: #FAFAFA;
     background-color: #FF003C;
-    
 }
 
 input[type="submit"]:hover {
     color: #FAFAFA;
     background-color: #2bb801;
-    
 }
 
 form fieldset:last-of-type {
@@ -375,25 +353,20 @@ input:focus {
 }
 
 select {
-    font-family: "Play", sans-serif;
-    color: #FAFAFA;
-    font-size: 1.1rem;
     background-color: #050A0E;
     color: #FAFAFA;
     border: 2px solid #00F0FF;
     margin-bottom: 20px !important;
 }
 
-.select-print {
+ul.select-print {
     display: none;
 }
 
-.form_terkoz {
+input.form_terkoz {
     margin-bottom: 20px !important;
 }
 
-#carousel {
+div.carousel {
     margin-bottom: 60px;
-    border: 2px solid #00F0FF;
-    box-shadow: 0 0 10px #00F0FF;
 }

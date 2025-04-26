@@ -1,13 +1,29 @@
 body {
     background-color: white !important;
+    font-size: 1rem;
 }
 
 details,
-nav, hr, .ratio, .carousel, .print, meter {
+nav,
+hr,
+div.ratio,
+div.carousel,
+.print,
+meter {
   display: none !important;
 }
 
-h1, h2, p, a {
+div,
+div.terkoz,
+div.urlap,
+h1,
+h2,
+p,
+th,
+td,
+a {
+    padding: 0 !important;
+    margin: 0 !important;
     color: black !important;
 }
 
@@ -23,13 +39,23 @@ a::after {
     content: " ("attr(href) ")";
 }
 
-img, div, table, p {
+div.tile,
+div.osszefoglalo,
+div.leiras p,
+table {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+img,
+div,
+table,
+p {
     border: none !important;
     box-shadow: none !important;
 }
 
 p {
-    font-size: 1rem;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
 }
@@ -38,7 +64,8 @@ img {
     max-width: 60% !important;
 }
 
-input, textarea {
+input,
+textarea {
     border: 1px solid black;
 }
 
@@ -46,10 +73,6 @@ select {
     display: none;
 }
 
-.select-print {
+ul.select-print {
     display: block;
-}
-
-div.terkoz, div.urlap {
-    margin-top: 0 !important;
 }

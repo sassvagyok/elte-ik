@@ -5,7 +5,9 @@ body {
 }
 
 .container-fluid.hatter {
-    background-image: url("media/background3.jpg");
+    background-image: url("media/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .fa-bars, .fa-bars:visited {
@@ -89,8 +91,8 @@ h2 {
 }
 
 h2.video {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
 
 h2.kiscim {
@@ -191,6 +193,7 @@ div.terkoz {
 .ratio {
     border: 2px solid #00F0FF;
     box-shadow: 0 0 10px #00F0FF;
+    margin-bottom: 20px;
 }
 
 div.osszefoglalo {
@@ -381,6 +384,16 @@ select {
     margin-bottom: 20px !important;
 }
 
+.select-print {
+    display: none;
+}
+
 .form_terkoz {
     margin-bottom: 20px !important;
+}
+
+#carousel {
+    margin-bottom: 60px;
+    border: 2px solid #00F0FF;
+    box-shadow: 0 0 10px #00F0FF;
 }

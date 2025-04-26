@@ -1,0 +1,55 @@
+body {
+    background-color: white !important;
+}
+
+details,
+nav, hr, .ratio, .carousel, .print, meter {
+  display: none !important;
+}
+
+h1, h2, p, a {
+    color: black !important;
+}
+
+h1 {
+    font-size: 2.2rem !important;
+}
+
+h2 {
+    font-size: 1.8rem !important;
+}
+
+a::after {
+    content: " ("attr(href) ")";
+}
+
+img, div, table, p {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+p {
+    font-size: 1rem;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+img {
+    max-width: 60% !important;
+}
+
+input, textarea {
+    border: 1px solid black;
+}
+
+select {
+    display: none;
+}
+
+.select-print {
+    display: block;
+}
+
+div.terkoz, div.urlap {
+    margin-top: 0 !important;
+}

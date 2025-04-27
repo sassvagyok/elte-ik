@@ -11,6 +11,7 @@
     - [Gyakorlat](2/web/gyakorlat/)
     - [Modulzáró](2/web/modulzaro/)
     - [Beadandó](2/web/beadando/)
+        - [Oldal](https://github.com/sassvagyok/nightcity)
 
 ### 1. félév
 - [Funkcionális programozás](1/funkcprog/)

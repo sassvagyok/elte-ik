@@ -11,7 +11,7 @@ body.large-text input {
 }
 
 body.large-text img.textsize-icon {
-    width: 45px;
+    width: 40px;
 }
 
 body.large-text h1 {
@@ -22,4 +22,13 @@ body.large-text h2,
 body.large-text h2.video,
 body.large-text p.alcim {
     font-size: 2.8rem !important;
+}
+
+body.large-text div.osszefoglalo ul {
+    font-size: 2rem !important;
+    padding-top: 90px;
+}
+
+body.large-text i.fa-bars {
+    font-size: 2rem;
 }

@@ -26,6 +26,9 @@
 							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menüsáv lenyitása">
 								<i class="fa-solid fa-bars"></i>
 							</button>
+							<a class="nav-link d-md-none ms-auto me-2" href="#" id="textsize-toggle">
+								<img src="media/textsize.svg" alt="" class="textsize-icon">
+							</a>
 							<div class="collapse navbar-collapse" id="navbarNav">
 								<ul class="navbar-nav">
 									<li class="nav-item">
@@ -38,10 +41,10 @@
 										<a class="nav-link active" aria-current="page" href="form.html">Érdekel</a>
 									</li>
 								</ul>
-								<ul class="navbar-nav ms-auto">
+								<ul class="navbar-nav ms-auto d-none d-md-flex">
 									<li class="nav-item">
 										<a class="nav-link" href="#" id="textsize-toggle">
-											<img src="media/textsize.svg" alt="" class="textsize-icon">
+											<img src="media/textsize.svg" alt="" class="textsize-icon" title="Nagybetűs mód állítása">
 										</a>
 									</li>
 								</ul>
@@ -53,17 +56,17 @@
 		</div>
     </header>
 	<main>
-		<div class="row">
-			<div class="col-12">
-				<h1>ÉLJEN ÖN IS <span lang="en">NIGHT CITY</span>-BEN</h1>
-				<p class="alcim">Lépjen be új életébe</p>
-			</div>
-		</div>
 		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<h1>ÉLJEN ÖN IS <span lang="en">NIGHT CITY</span>-BEN</h1>
+					<p class="alcim">Lépjen be az új életébe</p>
+				</div>
+			</div>
 			<div class="row justify-content-center">
 				<div class="col-10 col-sm-8 col-lg-4 m-3 osszefoglalo">
 					<h2 class="kiscim">Várólista</h2>
-					<p>Ha szívesen élne városunkban, ne várjon tovább, és <strong>töltse ki</strong> az alábbi űrlapot, amellyel kiválaszthatja a preferált életkörülményeit!<br>Ezáltal <strong>felkerül a várólistánkra</strong>, és amint elérhetővé válik Ön számára egy ingatlan, <strong>azonnal értesítjük</strong>!</p>
+					<p>Ha szívesen élne városunkban, ne várjon tovább, és <strong>töltse ki</strong> az alábbi űrlapot, amellyel kiválaszthatja az Önnek ideális életkörülményeket!<br>Ezáltal <strong>felkerül a várólistánkra</strong>, és amint elérhetővé válik Ön számára egy ingatlan, <strong>azonnal értesítjük</strong>!</p>
 				</div>
 			</div>
 		</div>
@@ -109,7 +112,7 @@
 						</fieldset>
 		
 						<fieldset>
-							<label><strong>Jelölje be csak a legfontosabb szempontokat!</strong></label><br>
+							<label><strong>Jelölje be a legfontosabbakat!</strong></label><br>
 							<input type="checkbox" id="megfizethetoseg" name="megfizethetoseg" value="Igen">
 							<label for="megfizethetoseg"> Megfizethetőség</label><br>
 							<input type="checkbox" id="lehetoseg" name="lehetoseg" value="Igen">
@@ -119,13 +122,13 @@
 						</fieldset>
 		
 						<fieldset>
-							<label for="egyeb"><strong>Egyéb elvárások</strong></label><br>
+							<label for="egyeb"><strong>Egyéb elvárások:</strong></label><br>
 							<textarea class="w-100 form_terkoz" cols="60" rows="5" name="egyeb" id="egyeb" maxlength="500" placeholder=""></textarea>
 						</fieldset>
 						<p>*kötelező kitölteni</p>
 						<fieldset>
-							<input type="reset" value="Törlés" class="btn print">
-							<input type="submit" value="Beküldés" class="btn print">
+							<input type="reset" value="Alaphelyzet" class="btn print">
+							<input type="submit" value="Elküldés" class="btn print">
 						</fieldset>
 					</form>
 				</div>

@@ -51,7 +51,7 @@ nav ul li a:hover {
 }
 
 .textsize-icon {
-    width: 30px;
+    width: 28px;
 }
 
 a:link {
@@ -86,7 +86,7 @@ h1, h2 {
 h1 {
     color: #FCEE09 !important;
     font-size: 3.2rem !important;
-    margin-top: 10px !important;
+    margin-top: 20px !important;
     margin-bottom: 0 !important;
 }
 
@@ -108,7 +108,7 @@ h2.kiscim {
 }
 
 p.alcim {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -188,10 +188,13 @@ div.osszefoglalo p {
 }
 
 div.osszefoglalo ul {
+    list-style-type: square;
+    color: #00F0FF;
     padding-top: 15px;
 }
 
 div.osszefoglalo ul li {
+    font-size: 1.2rem;
     text-align: left;
 }
 
@@ -217,6 +220,7 @@ footer {
 }
 
 footer p {
+    font-size: 1rem;
     color: #050A0E;
     text-align: center;
     margin-bottom: 0;
@@ -317,7 +321,8 @@ input[type="submit"] {
     padding-top: 5px;
     padding-bottom: 5px;
     color: #FAFAFA;
-    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
     border-radius: 0;
     border: none;
     margin-bottom: 5px;
@@ -345,11 +350,6 @@ input[type="submit"]:hover {
 form fieldset:last-of-type {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-input:focus {
-    outline: none;
 }
 
 select {

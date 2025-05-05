@@ -1,5 +1,6 @@
 package parking;
 
+import vehicle.Size;
 import parking.facility.Space;
 
 public class ParkingLot {
@@ -21,5 +22,28 @@ public class ParkingLot {
 
     public Space[][] getFloorPlan() {
         return this.floorPlan;
+    }
+
+    public String toString() {
+        String parkingLotAsText = "";
+
+        for (int i = floorPlan.length - 1; i >= 0; i--) {
+            for (int j = 0; j < floorPlan[i].length; j++) {
+                if (!floorPlan[i][j].isTaken()) {
+                    parkingLotAsText += "X";
+                } else if (floorPlan[i][j].getOccupyingCarSize().equals(Size.LARGE)) {
+                    parkingLotAsText += "L";
+                } else if (floorPlan[i][j].getOccupyingCarSize().equals(Size.SMALL)) {
+                    parkingLotAsText += "S";
+                }
+
+                if (j < floorPlan[i].length - 1) {
+                    parkingLotAsText += " ";
+                }
+            }
+            parkingLotAsText += "\n";
+        }
+
+        return parkingLotAsText;
     }
 }

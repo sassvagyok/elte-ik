@@ -1,19 +1,20 @@
 package parking.facility;
 
+import java.util.ArrayList;
+
 import vehicle.Car;
 import vehicle.Size;
 import parking.facility.Space;
 import parking.ParkingLot;
 
-import java.util.ArrayList;
-
 public class Gate {
     private final ArrayList<Car> cars = new ArrayList<Car>();
     private final ParkingLot parkingLot;
-    private static int currentId = 0;
+    private int currentId = 0;
 
     public Gate(ParkingLot parkingLot) {
         this.parkingLot = parkingLot;
+        this.currentId = 0;
     }
 
     private Space findTakenSpaceByCar(Car c) {
@@ -33,11 +34,9 @@ public class Gate {
 
         for (int i = 0; i < spaces.length; i++) {
             if (!spaces[i].isTaken()) {
-                if (c.getSpotOccupation().equals(Size.LARGE)) {
-                    if (i + 1 < spaces.length && !spaces[i + 1].isTaken()) {
-                        return spaces[i];
-                    }
-                } else {
+                if (c.getSpotOccupation().equals(Size.LARGE) && i + 1 < spaces.length && !spaces[i + 1].isTaken()) {
+                    return spaces[i + 1];
+                } else if (c.getSpotOccupation().equals(Size.SMALL)) {
                     return spaces[i];
                 }
             }
@@ -98,7 +97,7 @@ public class Gate {
                 int floorNumber = preferredAvailableSpace.getFloorNumber();
                 int spaceNumber = preferredAvailableSpace.getSpaceNumber();
 
-                parkingLot.getFloorPlan()[floorNumber][spaceNumber + 1].addOccupyingCar(c);
+                parkingLot.getFloorPlan()[floorNumber][spaceNumber - 1].addOccupyingCar(c);
             }
 
             return true;
@@ -122,10 +121,10 @@ public class Gate {
                     int floorNumber = availableSpace.getFloorNumber();
                     int spaceNumber = availableSpace.getSpaceNumber();
 
-                    parkingLot.getFloorPlan()[floorNumber][spaceNumber + 1].addOccupyingCar(car);
+                    parkingLot.getFloorPlan()[floorNumber][spaceNumber - 1].addOccupyingCar(car);
                 }
             } else {
-                System.out.println("Nem található hely az adott autó számára!");
+                System.out.println("Nem található hely ennek: " + car.getLicensePlate());
             }
         }
     }
@@ -150,6 +149,7 @@ public class Gate {
             }
 
             takenSpace.removeOccupyingCar();
+            cars.remove(foundCar);
         }
     }
 }

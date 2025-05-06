@@ -1,3 +1,5 @@
+package parking;
+
 import static check.CheckThat.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
@@ -50,27 +52,27 @@ public class ParkingLotTest {
         Space[][] floorPlan = parkingLot.getFloorPlan();
         Gate gate = new Gate(parkingLot);
 
-        Car smallCar1 = new Car("ASD-001", Size.SMALL, 0);
-        Car smallCar2 = new Car("ASD-002", Size.SMALL, 0);
-        Car smallCar3 = new Car("ASD-003", Size.SMALL, 0);
-        Car smallCar4 = new Car("ASD-004", Size.SMALL, 0);
-        Car smallCar5 = new Car("ASD-005", Size.SMALL, 0);
-        Car smallCar6 = new Car("ASD-021", Size.SMALL, 2);
-        Car smallCar7 = new Car("ASD-022", Size.SMALL, 2);
-        Car smallCar8 = new Car("ASD-023", Size.SMALL, 2);
-        Car smallCar9 = new Car("ASD-031", Size.SMALL, 3);
-        Car smallCar10 = new Car("ASD-032", Size.SMALL, 3);
-        Car smallCar11 = new Car("ASD-033", Size.SMALL, 3);
-        Car smallCar12 = new Car("ASD-041", Size.SMALL, 4);
-        Car smallCar13 = new Car("ASD-042", Size.SMALL, 4);
-        Car smallCar14 = new Car("ASD-043", Size.SMALL, 4);
-        Car smallCar15 = new Car("ASD-044", Size.SMALL, 4);
-        Car smallCar16 = new Car("ASD-045", Size.SMALL, 4);
+        Car smallCar1 = new Car("ASD-000", Size.SMALL, 0);
+        Car smallCar2 = new Car("ASD-001", Size.SMALL, 0);
+        Car smallCar3 = new Car("ASD-002", Size.SMALL, 0);
+        Car smallCar4 = new Car("ASD-003", Size.SMALL, 0);
+        Car smallCar5 = new Car("ASD-004", Size.SMALL, 0);
+        Car smallCar6 = new Car("ASD-020", Size.SMALL, 2);
+        Car smallCar7 = new Car("ASD-021", Size.SMALL, 2);
+        Car smallCar8 = new Car("ASD-022", Size.SMALL, 2);
+        Car smallCar9 = new Car("ASD-030", Size.SMALL, 3);
+        Car smallCar10 = new Car("ASD-031", Size.SMALL, 3);
+        Car smallCar11 = new Car("ASD-032", Size.SMALL, 3);
+        Car smallCar12 = new Car("ASD-040", Size.SMALL, 4);
+        Car smallCar13 = new Car("ASD-041", Size.SMALL, 4);
+        Car smallCar14 = new Car("ASD-042", Size.SMALL, 4);
+        Car smallCar15 = new Car("ASD-043", Size.SMALL, 4);
+        Car smallCar16 = new Car("ASD-044", Size.SMALL, 4);
 
-        Car largeCar1 = new Car("ASD-011", Size.LARGE, 1);
-        Car largeCar2 = new Car("ASD-012", Size.LARGE, 1);
-        Car largeCar3 = new Car("ASD-024", Size.LARGE, 2);
-        Car largeCar4 = new Car("ASD-034", Size.LARGE, 3);
+        Car largeCar1 = new Car("ASD-010", Size.LARGE, 1);
+        Car largeCar2 = new Car("ASD-011", Size.LARGE, 1);
+        Car largeCar3 = new Car("ASD-023", Size.LARGE, 2);
+        Car largeCar4 = new Car("ASD-033", Size.LARGE, 3);
 
         gate.registerCars(smallCar1, smallCar2, smallCar3, smallCar4, smallCar5);
 

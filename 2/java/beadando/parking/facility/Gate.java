@@ -10,7 +10,7 @@ import parking.ParkingLot;
 public class Gate {
     private final ArrayList<Car> cars = new ArrayList<Car>();
     private final ParkingLot parkingLot;
-    private int currentId = 0;
+    private int currentId;
 
     public Gate(ParkingLot parkingLot) {
         this.parkingLot = parkingLot;

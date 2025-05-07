@@ -6,6 +6,7 @@
     - [Nagybeadandó](2/oep/nagybeadando/)
 - [Programozási nyelvek - Java](2/java/)
     - [Gyakorlat](2/java/gyakorlat/)
+    - [Beadandó](2/java/beadando/)
     - [CheckThat](2/java/checkthat/)
 - [Webfejlesztés](2/web/)
     - [Gyakorlat](2/web/gyakorlat/)

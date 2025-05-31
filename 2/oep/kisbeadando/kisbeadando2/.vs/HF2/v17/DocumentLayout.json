@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{298525F4-8EB9-4F1B-9F59-59783E6565A5}|HF2.csproj|c:\\users\\matep\\documents\\github\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298525F4-8EB9-4F1B-9F59-59783E6565A5}|HF2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298525F4-8EB9-4F1B-9F59-59783E6565A5}|HF2.csproj|c:\\users\\matep\\documents\\github\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\labyrinth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298525F4-8EB9-4F1B-9F59-59783E6565A5}|HF2.csproj|solutionrelative:labyrinth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298525F4-8EB9-4F1B-9F59-59783E6565A5}|HF2.csproj|c:\\users\\matep\\documents\\github\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298525F4-8EB9-4F1B-9F59-59783E6565A5}|HF2.csproj|solutionrelative:direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{298525F4-8EB9-4F1B-9F59-59783E6565A5}|HF2.csproj|c:\\users\\matep\\documents\\github\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{298525F4-8EB9-4F1B-9F59-59783E6565A5}|HF2.csproj|solutionrelative:content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Direction.cs",
+              "DocumentMoniker": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\Direction.cs",
+              "RelativeDocumentMoniker": "Direction.cs",
+              "ToolTip": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\Direction.cs",
+              "RelativeToolTip": "Direction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T14:56:02.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Labyrinth.cs",
+              "DocumentMoniker": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\Labyrinth.cs",
+              "RelativeDocumentMoniker": "Labyrinth.cs",
+              "ToolTip": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\Labyrinth.cs",
+              "RelativeToolTip": "Labyrinth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T14:52:04.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Content.cs",
+              "DocumentMoniker": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\Content.cs",
+              "RelativeDocumentMoniker": "Content.cs",
+              "ToolTip": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\Content.cs",
+              "RelativeToolTip": "Content.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T14:47:29.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwA4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T14:47:06.079Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08513953-166A-4EB6-A7DC-3066D11DAD24}|HF4.csproj|c:\\users\\matep\\documents\\github\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08513953-166A-4EB6-A7DC-3066D11DAD24}|HF4.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08513953-166A-4EB6-A7DC-3066D11DAD24}|HF4.csproj|c:\\users\\matep\\documents\\github\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando4\\element.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08513953-166A-4EB6-A7DC-3066D11DAD24}|HF4.csproj|solutionrelative:element.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08513953-166A-4EB6-A7DC-3066D11DAD24}|HF4.csproj|c:\\users\\matep\\documents\\github\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando4\\prqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08513953-166A-4EB6-A7DC-3066D11DAD24}|HF4.csproj|solutionrelative:prqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando4\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando4\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAgwBIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:15:36.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Element.cs",
+              "DocumentMoniker": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando4\\Element.cs",
+              "RelativeDocumentMoniker": "Element.cs",
+              "ToolTip": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando4\\Element.cs",
+              "RelativeToolTip": "Element.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:21:03.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PrQueue.cs",
+              "DocumentMoniker": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando4\\PrQueue.cs",
+              "RelativeDocumentMoniker": "PrQueue.cs",
+              "ToolTip": "C:\\Users\\matep\\Documents\\GitHub\\elte-ik\\2\\oep\\kisbeadando\\kisbeadando4\\PrQueue.cs",
+              "RelativeToolTip": "PrQueue.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:15:51.33Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

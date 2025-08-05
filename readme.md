@@ -1,34 +1,13 @@
 ### 2. félév
-
-- [Objektumelvű programozás](2/oep/)
-    - [Gyakorlat](2/oep/gyakorlat/)
-    - [Kisbeadandó](2/oep/kisbeadando/)
-    - [Nagybeadandó](2/oep/nagybeadando/)
-- [Programozási nyelvek - Java](2/java/)
-    - [Gyakorlat](2/java/gyakorlat/)
-    - [Beadandó](2/java/beadando/)
-    - [CheckThat](2/java/checkthat/)
-- [Webfejlesztés](2/web/)
-    - [Gyakorlat](2/web/gyakorlat/)
-    - [Modulzáró](2/web/modulzaro/)
-    - [Beadandó](2/web/beadando/)
-        - [Oldal](https://github.com/sassvagyok/nightcity)
+| [Objektumelvű programozás](2/oep/) | [Programozási nyelvek - Java](2/java/) | [Webfejlesztés](2/webfejl/) |
+| :----: | :----: | :----: |
+| [Gyakorlat](2/oep/gyakorlat/) | [Gyakorlat](2/java/gyakorlat/) | [Gyakorlat](2/webfejl/gyakorlat/) |
+| [Nagybeadandó](2/oep/nagybeadando/) | [Beadandó](2/java/beadando/) | [Beadandó](2/webfejl/beadando/) |
+| [Kisbeadandó](2/oep/kisbeadando/) | [CheckThat](2/java/checkthat/) | - |
 
 ### 1. félév
-- [Funkcionális programozás](1/funkcprog/)
-    - [Gyakorlat](1/funkcprog/gyakorlat/)
-    - [Beadandó](1/funkcprog/beadando/)
-    - [Házi](1/funkcprog/hazi/)
-    - [Viszga](1/funkcprog/vizsga/)
-- [Imperatív programozás](1/impprog/)
-    - [Gyakorlat](1/impprog/gyakorlat/)
-    - [Beadandó](1/impprog/beadando/)
-- [Programozás](1/progalap/)
-    - [Gyakorlat](1/progalap/gyakorlat/)
-    - [Beadandó](1/progalap/beadando/)
-    - [Zárthelyi](1/progalap/zarthelyi/)
-- [Számítógépes rendszerek](1/szamrend/)
-    - [Gyakorlat](/1/szamrend/gyakorlat/)
-    - [Beadandó](/1/szamrend/beadando/)
-    - [Házi](1/szamrend/hazi/)
-    - [Zárthelyi](1/szamrend/zarthelyi/)
+| [Funkcionális programozás](1/funkcprog/) | [Imperatív programozás](1/impprog/) | [Programozás](1/progalap/) | [Számítógépes rendszerek](1/szamrend/) |
+| :----: | :----: | :----: | :----: |
+| [Gyakorlat](1/funkcprog/gyakorlat/) | [Gyakorlat](1/impprog/gyakorlat/) | [Gyakorlat](1/progalap/gyakorlat/) | [Unix](1/szamrend/unix/) / [Powershell](1/szamrend/powershell/)|
+| [Beadandó](1/funkcprog/beadando/) | [Beadandó](1/impprog/beadando/) | [Beadandó](1/progalap/beadando/) | - |
+| [Viszga](1/funkcprog/vizsga-gyak/) | - | [Zárthelyi](1/progalap/zarthelyi/) | - |

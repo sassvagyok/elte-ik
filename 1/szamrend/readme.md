@@ -1,0 +1,1 @@
+# Számítógépes rendszerek (IP-18SZGREG)

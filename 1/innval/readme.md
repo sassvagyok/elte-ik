@@ -1,0 +1,1 @@
+# Innovatív vállalkozás menedzsment (IP-18IVMEG)

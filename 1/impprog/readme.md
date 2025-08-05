@@ -1,0 +1,1 @@
+# Imperatív programozás (IP-18IMPROGEG)

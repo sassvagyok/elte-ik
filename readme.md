@@ -1,5 +1,5 @@
 ### 3. félév
-| [Programozás technológia](3/progtech/) | [Webprogramozás](3/webprog/) | [Python](3/python/) |
+| [Programozás technológia](3/progtech/) | [Python](3/python/) | [Webprogramozás](3/webprog/) |
 | :----: | :----: | :----: |
 
 ### 2. félév

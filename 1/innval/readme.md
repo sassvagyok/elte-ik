@@ -1,1 +1,1 @@
-# Innovatív vállalkozás menedzsment (IP-18IVMEG)
+# Innovatív vállalkozás menedzsment EA+GY (IP-18IVMEG)

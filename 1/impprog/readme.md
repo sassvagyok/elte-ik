@@ -1,1 +1,1 @@
-# Imperatív programozás (IP-18IMPROGEG)
+# Imperatív programozás EA+GY (IP-18IMPROGEG)

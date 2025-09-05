@@ -1,1 +1,1 @@
-# Programozási nyelvek (Java) (IP-18PNYEG)
+# Programozási nyelvek Ea+Gy (IP-18PNYEG)

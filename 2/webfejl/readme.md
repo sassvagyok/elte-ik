@@ -1,1 +1,1 @@
-# Web-fejlesztés (IP-18WF1EG)
+# Web-fejlesztés Ea+Gy (IP-18WF1EG)

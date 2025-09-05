@@ -1,1 +1,1 @@
-# Számítógépes rendszerek (IP-18SZGREG)
+# Számítógépes rendszerek EA+GY (IP-18SZGREG)

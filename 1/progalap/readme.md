@@ -1,1 +1,1 @@
-# Programozás (IP-18PROGEG)
+# Programozás EA+GY (IP-18PROGEG)

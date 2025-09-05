@@ -1,3 +1,7 @@
+### 3. félév
+| [Programozás technológia](3/progtech/) | [Webprogramozás](3/webprog/) | [Python](3/python/) |
+| :----: | :----: | :----: |
+
 ### 2. félév
 | [Objektumelvű programozás](2/oep/) | [Programozási nyelvek - Java](2/java/) | [Webfejlesztés](2/webfejl/) |
 | :----: | :----: | :----: |

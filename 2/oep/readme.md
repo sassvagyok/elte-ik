@@ -1,1 +1,1 @@
-# Objektumelvű programozás (IP-18OEPROGEG)
+# Objektumelvű programozás Ea+Gy (IP-18OEPROGEG)

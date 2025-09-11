@@ -1,9 +1,19 @@
+package People;
+
 public class Person {
-    public String name;
+    private String name;
     private int age;
 
-    public Person(int age, String name) {
+    public Person(String name, int age) {
         this.age = age;
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
     }
 }

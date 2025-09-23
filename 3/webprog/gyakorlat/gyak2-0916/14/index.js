@@ -41,9 +41,12 @@ function onSubmit(e) {
     } else {
         const talalatok = getBooksByYear(ev);
 
-        lista.innerHTML = talalatok.length ? talalatok.map(x => x.cim).join("<br>") : "Nincs találat!";
-        
+        lista.innerHTML = talalatok.length ? `<ul>${genList(talalatok)}</ul>`: "Nincs találat!";
     }
+}
+
+function genList(talalatok) {
+    return talalatok.map(x => `<li>${x.cim}</li>`).join("");
 }
 
 //+feladatok

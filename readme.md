@@ -2,6 +2,7 @@
 | [Programozás technológia](3/progtech/) | [Python](3/python/) | [Webprogramozás](3/webprog/) |
 | :----: | :----: | :----: |
 | [Gyakorlat](3/progtech/gyakorlat/) | [Gyakorlat](3/python/gyakorlat/) | [Gyakorlat](3/webprog/gyakorlat/) |
+| - | [Szorgalmi](3/python/szorgalmi/) | - |
 
 ### 2. félév
 | [Objektumelvű programozás](2/oep/) | [Programozási nyelvek - Java](2/java/) | [Webfejlesztés](2/webfejl/) |

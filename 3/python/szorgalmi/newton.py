@@ -15,8 +15,9 @@ def newton_method(n, A, m):
 
 def get_results(n, A, m):
     print(f"{A} {m}. gyöke {n}x végrehajtva:\n")
-    result = newton_method(n, A, m)
-    print(f"\nNewton-féle: {result}\tBeépített: {A ** (1 / m)}\n")
+    newton_result = newton_method(n, A, m)
+    built_in_result = A ** (1 / m)
+    print(f"\nNewton-féle: {newton_result}\tBeépített: {built_in_result}\n")
 
 get_results(10, 2, 2)
 get_results(10, 10, 3)

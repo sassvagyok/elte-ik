@@ -11,7 +11,17 @@ package beadando1_6;
 public class Hexagon extends Shape {
 
     public Hexagon(Point center, double length) {
-        super(center, length, length);
+        super(center, length, "Hexagon");
+    }
+    
+    @Override
+    public boolean contains(Point p) {
+        return false;
+    }
+    
+    @Override
+    public void calculateRadius() {
+        this.radius = length;
     }
     
 }

@@ -11,7 +11,17 @@ package beadando1_6;
 public class Triangle extends Shape {
 
     public Triangle(Point center, double length) {
-        super(center, length, (length / Math.sqrt(3)));
+        super(center, length, "Triangle");
+    }
+    
+    @Override
+    public boolean contains(Point p) {
+        return false;
+    }
+    
+    @Override
+    public void calculateRadius() {
+        this.radius = length / Math.sqrt(3);
     }
     
 }

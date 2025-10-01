@@ -11,7 +11,7 @@ package beadando1_6;
 public class Square extends Shape {
 
     public Square(Point center, double length) {
-        super(center, length, (length / Math.sqrt(2)));
+        super(center, length, "Square");
     }
 
     @Override
@@ -22,6 +22,11 @@ public class Square extends Shape {
                 p.getX() <= center.getX() + half &&
                 p.getY() >= center.getY() - half &&
                 p.getY() <= center.getY() + half;
+    }
+    
+    @Override
+    public void calculateRadius() {
+        this.radius = length / Math.sqrt(2);
     }
     
 }

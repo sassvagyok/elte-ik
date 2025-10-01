@@ -11,11 +11,18 @@ package beadando1_6;
 public abstract class Shape {
     protected Point center;
     protected double length, radius;
+    protected String type;
 
-    public Shape(Point center, double length, double radius) {
+    /**
+     * 
+     * @param center
+     * @param length
+     * @param type 
+     */
+    public Shape(Point center, double length, String type) {
         this.center = center;
         this.length = length;
-        this.radius = radius;
+        this.type = type;
     }
 
     public Point getCenter() {
@@ -41,6 +48,16 @@ public abstract class Shape {
     public void setRadius(double radius) {
         this.radius = radius;
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
     
     public abstract boolean contains(Point p);
+    
+    public abstract void calculateRadius();
 }

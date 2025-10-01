@@ -11,7 +11,7 @@ package beadando1_6;
 public class Circle extends Shape {
 
     public Circle(Point center, double length) {
-        super(center, length, (length / 2));
+        super(center, length, "Circle");
     }
 
     @Override
@@ -20,6 +20,11 @@ public class Circle extends Shape {
         double dy = p.getY() - center.getY();
         
         return dx * dx + dy * dy <= getRadius() * getRadius();
+    }
+
+    @Override
+    public void calculateRadius() {
+        this.radius = length / 2;
     }
     
 }

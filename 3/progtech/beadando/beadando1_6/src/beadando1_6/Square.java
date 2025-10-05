@@ -10,23 +10,37 @@ package beadando1_6;
  */
 public class Square extends Shape {
 
+    /**
+     * Konstruktor
+     *
+     * @param center
+     * @param length
+     */
     public Square(Point center, double length) {
-        super(center, length, "Square");
+        super(center, length);
     }
 
+    /**
+     * Metódus, amit eldönti, hogy az adott pont benne van-e a négyzetben.
+     *
+     * @param p
+     * @return benne van a pont?
+     */
     @Override
     public boolean contains(Point p) {
-        double half = getLength() / 2;
-        
-        return p.getX() >= center.getX() - half &&
-                p.getX() <= center.getX() + half &&
-                p.getY() >= center.getY() - half &&
-                p.getY() <= center.getY() + half;
+        double halfOfLength = getLength() / 2;
+
+        return p.getX() >= center.getX() - halfOfLength
+                && p.getX() <= center.getX() + halfOfLength
+                && p.getY() >= center.getY() - halfOfLength
+                && p.getY() <= center.getY() + halfOfLength;
     }
-    
+
+    /**
+     * Metódus, ami kiszámolja a négyzet sugarát.
+     */
     @Override
     public void calculateRadius() {
         this.radius = length / Math.sqrt(2);
     }
-    
 }

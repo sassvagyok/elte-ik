@@ -1,0 +1,5 @@
+4
+triangle 0 0 20
+circle 0 0 30
+square 0 0 40
+hexagon 0 0 50

@@ -9,14 +9,21 @@ package beadando1_6;
  * @author matte
  */
 public class Point {
-    private int x, y;
 
-    public Point(int x, int y) {
+    private double x, y;
+
+    /**
+     * Konstruktor
+     *
+     * @param x
+     * @param y
+     */
+    public Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
@@ -24,7 +31,7 @@ public class Point {
         this.x = x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 

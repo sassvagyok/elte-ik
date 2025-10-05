@@ -1,0 +1,5 @@
+4
+triangle 10 4 6
+circle 4 10 10
+square 5 3 6
+hexagon 3 5 10

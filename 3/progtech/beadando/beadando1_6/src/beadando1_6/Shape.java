@@ -9,20 +9,19 @@ package beadando1_6;
  * @author matte
  */
 public abstract class Shape {
+
     protected Point center;
     protected double length, radius;
-    protected String type;
 
     /**
-     * 
+     * Konstruktor
+     *
      * @param center
      * @param length
-     * @param type 
      */
-    public Shape(Point center, double length, String type) {
+    public Shape(Point center, double length) {
         this.center = center;
         this.length = length;
-        this.type = type;
     }
 
     public Point getCenter() {
@@ -49,15 +48,17 @@ public abstract class Shape {
         this.radius = radius;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-    
+    /**
+     * Absztrakt metódus, amit eldönti, hogy az adott pont benne van-e a
+     * síkidomban.
+     *
+     * @param p
+     * @return benne van a pont?
+     */
     public abstract boolean contains(Point p);
-    
+
+    /**
+     * Absztrakt metódus, ami kiszámolja síkidom sugarát.
+     */
     public abstract void calculateRadius();
 }

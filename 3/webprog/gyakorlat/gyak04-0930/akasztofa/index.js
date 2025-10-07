@@ -35,21 +35,38 @@ function renderScore() {
 }
 
 function renderButtons() {
-    divButtons.innerHTML = buttons.split().map(x => `<button ${guesses.includes(x) ? "disabled" : ""}>${x}</button>`).join("");
+    divButtons.innerHTML = buttons.split("").map(x => `<button ${guesses.includes(x) ? "disabled" : ""}>${x}</button>`).join("");
 }
 
 function renderWord() {
-    divWord.innerHTML = theWord.split().map(x => `<span class=${isLost() && guesses.includes(x) ? "hianyzo" : ""}>${isLost() || guesses.includes(c) ? c : ""}</span>`).join("");
+    divWord.innerHTML = theWord.split("").map(x => `<span class=${isLost() && guesses.includes(x) ? "hianyzo" : ""}>${isLost() || guesses.includes(x) ? x : ""}</span>`).join("");
 }
 
 function updateSVG() {
     for (let i = 1; i <= getWrongGuesses().length; i++) {
-        document.querySelector(`svg*:nth-child(${i})`).classList.add("rajzol");
+        document.querySelector(`svg *:nth-child(${i})`).classList.add("rajzol");
     }
 }
 
 divButtons.addEventListener("click", function(e) {
     if (!isWon() && !isLost() && e.target.matches("button")) {
+        const c = e.target.innerHTML;
         
+        guesses.push(c);
+
+        renderWord();
+        renderButtons();
+        renderEnd();
+        renderScore();
+        updateSVG();
+
+        if (isWon) divWord.classList.add("nyer");
     }
 });
+
+// Start
+renderWord();
+renderButtons();
+renderEnd();
+renderScore();
+updateSVG();

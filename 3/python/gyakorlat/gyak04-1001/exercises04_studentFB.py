@@ -51,7 +51,7 @@ remove_duplicates = lambda lst : list(set(lst))
 print(remove_duplicates([1, 2, 2, 3, 4, 4, 5]))  # Kimenet: [1, 2, 3, 4, 5]
 
 # 14. Feladat: Lambda egy szám faktoriálisának kiszámítására
-factorial = lambda x : x if x == 1 else x*factorial(x-1)
+factorial = lambda x : x if x == 1 else x*factorial(x - 1)
 print(factorial(5))  # Kimenet: 120
 
 # 15. Feladat: Lambda annak ellenőrzésére, hogy egy string palindróm-e

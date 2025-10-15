@@ -58,13 +58,13 @@ class Book:
         self.pagenumber = pagenumber
 
     def __eq__(self, other):
-        if isinstance(other, Book):
+        if not isinstance(other, Book):
             raise ValueError("Nem hasonlítható össze! Nem Book!")
         
         return self.pagenumber == other.pagenumber;
 
     def __lt__(self, other):
-        if isinstance(other, Book):
+        if not isinstance(other, Book):
             raise ValueError("Nem hasonlítható össze! Nem Book!")
         
         return self.pagenumber < other.pagenumber;
@@ -81,13 +81,33 @@ class Book:
 # Kivételekkel kezeld le az esetleges hibákat!
 
 class Library:
-    pass
+    books = []
+    
+    def __init__(self):
+        self.books = []
+
+    def add_book(self, book):
+        if not isinstance(book, Book):
+            raise ValueError("Nem Book!")
+        
+        self.books.append(book)
+        Library.books.append(book)
+
+    def __len__(self):
+        return len(self.books)
+    
+    def __str__(self):
+        if len(self.books) == 0:
+            raise Exception("Egy Book sincs hozzáadva!")
+        
+        sorted_books = sorted(self.books)
+        return "\n".join(str(book) for book in sorted_books)
 
 #4 Készítsünk egy Shape osztályt, ami bizonyos geometriai alakzatok alapját fogja adni.
 # Valósítsd meg a Circle (kör), Sphere (gömb), Cube (kocka) osztályt!
 # isinstance-cel vizsgáld meg, hogy helyes értékeket kapjanak példányosításkor az adatok!
 # (Működjön float és int típussal is!)
-# Adott metódusokkal kérdezzük le a térfogatukat, felszínüket, oldal (vagy sugár) méretüket is!
+# Adott metódusokkal kérdezzük le a té)rfogatukat, felszínüket, oldal (vagy sugár) méretüket is!
 # Kezeld kivételekkel a szélsőséges eseteket!
 
 class Shape:

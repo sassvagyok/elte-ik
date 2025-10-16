@@ -82,21 +82,23 @@ function valtoztat(dt) {
         }
     }
 
-    if (kirepul()) {
-        vege = true;
-    }
+    vege = kirepul();
 }
 
 function rajzol() {
-    ctx.fillStyle = "lightblue";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    const bgImage = new Image();
+    bgImage.src = "bg.png";
+    ctx.drawImage(bgImage, 0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = "green";
-    ctx.fillRect(madar.x, madar.y, madar.width, madar.height);
+    const birdImage = new Image();
+    birdImage.src = "bird.png";
+    ctx.drawImage(birdImage, madar.x, madar.y, madar.width, madar.height);
+
+    const columnImage = new Image();
+    columnImage.src = "column.png";
 
     oszlopok.forEach((oszlop) => {
-        ctx.fillStyle = "purple",
-        ctx.fillRect(oszlop.x, oszlop.y, oszlop.width, oszlop.height);
+        ctx.drawImage(columnImage, oszlop.x, oszlop.y, oszlop.width, oszlop.height);
     });
 
     if (vege) {

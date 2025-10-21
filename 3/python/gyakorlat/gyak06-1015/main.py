@@ -33,3 +33,16 @@ def get_items():
 @app.get("/items/{item_id}")
 def get_item(item_id : int):
     return lst[item_id]
+
+@app.post("/items", response_model=Book)
+def add_item(book: Book):
+    lst.append(book)
+    return book
+
+@app.delete("/items/{item_id}", response_model=Book)
+def delete_item(item_id : int):
+    lst.pop(item_id)
+
+@app.update("/items/{item_id}", response_model=Book)
+def update_item(item_id : int):
+    pass

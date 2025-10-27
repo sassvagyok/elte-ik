@@ -1,0 +1,6 @@
+Saguaro;piros;Mexikó;5
+Keleti medvetalpkaktusz;fehér;USA;3
+Szamócasünsün;sárga;Mexikó;2
+Arizonai hordókaktusz;piros;USA;5
+Hódfarkkaktusz;fehér;USA;3
+Tengerprati medvetalpkaktusz;piros;Mexikó;6

@@ -1,1 +1,0 @@
-# Innovatív vállalkozás menedzsment EA+GY (IP-18IVMEG)

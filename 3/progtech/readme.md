@@ -1,1 +1,1 @@
-# Programozás technológia Ea+Gy (IP-18cPROGTEG)
+# Programozási technológia Ea+Gy (IP-18cPROGTEG)

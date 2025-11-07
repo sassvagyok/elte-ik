@@ -1,0 +1,10 @@
+Aranyoszlopkaktusz;sárga;Mexikó;4
+Óriás oszlopkaktusz;fehér;Peru;7
+Karácsonyi kaktusz;rózsaszín;Brazília;2
+Húsvéti kaktusz;narancssárga;Brazília;3
+Tüskés körte;lila;USA;4
+Ezüstgyertyakaktusz;fehér;Argentína;6
+Aranysün kaktusz;sárga;Chile;3
+Kék oszlopkaktusz;kék;Peru;5
+Törpe medvetalpkaktusz;piros;Mexikó;2
+Gömbkaktusz;rózsaszín;Bolívia;3

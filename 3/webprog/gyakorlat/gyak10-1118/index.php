@@ -22,7 +22,7 @@
         </tr>
         <?php foreach($contacts as $c): ?>
             <tr>
-                <td><?= $c["name"] ?></td>
+                <td><a href="detail.php?id=<?= $c["id"] ?>"><?= $c["name"] ?></a></td>
                 <td><?= implode(", ", $c["emails"]) ?></td>
             </tr>
         <?php endforeach ?>

@@ -46,22 +46,32 @@
         return count($errors) === 0;
     }
 
+    if (!isset($_GET["id"])) {
+        header("Location: index.php");
+        exit;
+    }
+
+    $id = $_GET["id"];
+    $cs = new ContactStorage();
+    $contact = $cs->findById($id);
+
+    if (!$contact) {
+        header("Location: index.php");
+        exit;
+    }
+
     $data=[];
     $errors=[];
 
     if (count($_POST) > 0) {
         if (validate($_POST, $data, $errors)) {
-            $name=$data["name"];
-            $emails=$data["emails"];
+            $contact["name"]=$data["name"];
+            $contact["emails"]=$data["emails"];
 
             $cs = new ContactStorage();
-            $cs->add(
-                [
-                    "name"=>$name,
-                    "emails"=>$emails
-                ]
-            );
-            //itt valami
+            $cs->update($id, $contact);
+            header("Location: index.php");
+            exit;
         }
     }
 ?>
@@ -81,22 +91,22 @@
 </head>
 <body>
     <h1>Névjegyek</h1>
-    <h2>Új névjegy</h2>
+    <h2>Névjegy módosítása</h2>
     <form action="" method="post" novalidate>
-        Név: <input type="text" name="name" value="<?=$_POST['name'] ?? '' ?>" required> <br>
+        Név: <input type="text" name="name" value="<?= $_POST["name"] ?? $contact['name'] ?? '' ?>" required> <br>
         <?php if(isset($errors["name"])) : ?>
             <span><?= $errors["name"] ?></span>
         <?php endif ?>
         <br>
-        Email címek: <br>
-        <input type="email" name="emails[]" value="<?=$_POST['emails'][0] ?? '' ?>" required> <br>
-        <input type="email" name="emails[]" value="<?=$_POST['emails'][1] ?? '' ?>" > <br>
-        <input type="email" name="emails[]" value="<?=$_POST['emails'][2] ?? '' ?>"> <br>
+        Email címek:<br>
+        <input type="email" name="emails[]" value="<?= $_POST["emails"][0] ?? $contact['emails'][0] ?? '' ?>" required> <br>
+        <input type="email" name="emails[]" value="<?= $_POST["emails"][1] ?? $contact['emails'][1] ?? '' ?>" > <br>
+        <input type="email" name="emails[]" value="<?= $_POST["emails"][2] ?? $contact['emails'][2] ?? '' ?>"> <br>
         <?php if(isset($errors["emails"])) : ?>
             <span><?= $errors["emails"] ?></span>
         <?php endif ?>
         <br>
-        <button>Új névjegy</button>
+        <button>Névjegy módosítása</button>
         </form>
 </body>
 </html>

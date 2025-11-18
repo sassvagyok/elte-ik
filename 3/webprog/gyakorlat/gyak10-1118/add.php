@@ -61,7 +61,8 @@
                     "emails"=>$emails
                 ]
             );
-            //itt valami
+            header("Location: index.php");
+            exit;
         }
     }
 ?>

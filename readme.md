@@ -2,7 +2,7 @@
 | :----: | :----: | :----: | :----: |
 | **Gyakorlat** | [Gyakorlat](3/progtech/gyakorlat/) | [Gyakorlat](3/python/gyakorlat/) | [Gyakorlat](3/webprog/gyakorlat/) |
 | **Házi/Plusz** | - | [Szorgalmi](3/python/szorgalmi/) | [Szorgalmi](3/webprog/szorgalmi/) |
-| **Beadandó** | [Beadandó](3/progtech/beadando/) | - | - |
+| **Beadandó** | [Beadandó](3/progtech/beadando/) | [Beadandó](3/python/beadando/) | [Beadandó](3/webprog/beadando/) |
 | **Vizsga/ZH** | - | [Zárthelyi](3/python/midterm/) | - |
 
 | 2. félév | [Objektumelvű programozás](2/oep/) | [Programozási nyelvek - Java](2/java/) | [Webfejlesztés](2/webfejl/) |

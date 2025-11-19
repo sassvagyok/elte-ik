@@ -38,7 +38,32 @@ class User(BaseModel):
         return v
 
 class Item(BaseModel):
-    pass
+    item_id: int
+    name: str
+    brand: str
+    price: float
+    quantity: int
+
+    @field_validator('item_id')
+    @classmethod
+    def id_must_be_positive(cls, v: int) -> int:
+        if v < 0:
+            raise ValueError("Az id nem lehet negatív!")
+        return v
+    
+    @field_validator('price')
+    @classmethod
+    def price_must_be_positive(cls, v: float) -> float:
+        if v < 0:
+            raise ValueError("Az ár nem lehet negatív!")
+        return v
+    
+    @field_validator('quantity')
+    @classmethod
+    def quantity_must_be_positive(cls, v: int) -> int:
+        if v < 0:
+            raise ValueError("A mennyiség nem lehet negatív!")
+        return v
 
 class Basket(BaseModel):
     id: int

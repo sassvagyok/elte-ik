@@ -13,6 +13,8 @@ from data.filehandler import (
     add_user,
     add_basket,
     add_item_to_basket,
+    update_item,
+    delete_item
 )
 
 '''
@@ -39,23 +41,87 @@ def adduser(user: User, api_token: str | None = Header(default=None)) -> User:
 
     return JSONResponse(status_code=status.HTTP_201_CREATED, content=user.model_dump())
 
-@routers.post('/addshoppingbag')
+@routers.post('/addshoppingbag', response_model=str)
 def addshoppingbag(userid: int, api_token: str | None = Header(default=None)) -> str:
     verify_token(api_token)
 
-    add_basket()
+    user = get_user_by_id(userid)
+    if user is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
+    
+    existing_basket = get_basket_by_user_id(userid)
+
+    if existing_basket is not None:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="A felhasználónak már van kosara!")
+
+    new_basket = {
+        "id": userid + 100,
+        "user_id": userid,
+        "items": []
+    }
+
+    add_basket(new_basket)
+
+    return JSONResponse(status_code=status.HTTP_201_CREATED, content=new_basket)
 
 @routers.post('/additem', response_model=Basket)
-def additem(userid: int, item: Item, api_token: str | None = Header(default=None)) -> Basket:
-    pass
+def additem(userid: int, item: Item) -> Basket:
+    user = get_user_by_id(userid)
+    if user is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
+    
+    basket = get_basket_by_user_id(userid)
+    if basket is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználónak nincs kosara!")
+    
+    add_item_to_basket(userid, item.model_dump())
 
-@routers.put('/updateitem')
+    basket = get_basket_by_user_id(userid)
+
+    return JSONResponse(status_code=status.HTTP_201_CREATED, content=basket)
+
+
+@routers.put('/updateitem', response_model=Basket)
 def updateitem(userid: int, itemid: int, updateItem: Item) -> Basket:
-    pass
+    user = get_user_by_id(userid)
+    if user is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
+    
+    basket = get_basket_by_user_id(userid)
+    if basket is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználónak nincs kosara!")
+    
+    item = next((i for i in basket["items"] if i["item_id"] == itemid), None)
 
-@routers.delete('/deleteitem')
+    if item is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Nincs ilyen termék a kosárban!")
+
+    update_item(userid, itemid, updateItem)
+
+    basket = get_basket_by_user_id(userid)
+
+    return JSONResponse(status_code=status.HTTP_200_OK, content=basket)
+
+@routers.delete('/deleteitem', response_model=Basket)
 def deleteitem(userid: int, itemid: int) -> Basket:
-    pass
+    user = get_user_by_id(userid)
+    if user is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
+    
+    basket = get_basket_by_user_id(userid)
+    if basket is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználónak nincs kosara!")
+    
+    item = next((i for i in basket["items"] if i["item_id"] == itemid), None)
+
+    if item is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Nincs ilyen termék a kosárban!")
+
+    delete_item(userid, itemid)
+
+    basket = get_basket_by_user_id(userid)
+
+    return JSONResponse(status_code=status.HTTP_200_OK, content=basket)
 
 @routers.get('/user', response_model=User)
 def user(userid: int, api_token: str | None = Header(default=None)) -> User:
@@ -77,13 +143,31 @@ def users(api_token: str | None = Header(default=None)) -> list[User]:
 
     return JSONResponse(status_code=status.HTTP_200_OK, content=users)
 
-@routers.get('/shoppingbag')
+@routers.get('/shoppingbag', response_model=list[Item])
 def shoppingbag(userid: int) -> list[Item]:
-    pass
+    user = get_user_by_id(userid)
+    if user is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
+    
+    basket = get_basket_by_user_id(userid)
+    if basket is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználónak nincs kosara!")
+    
+    return JSONResponse(status_code=status.HTTP_200_OK, content=basket["items"])
 
-@routers.get('/getusertotal')
+@routers.get('/getusertotal', response_model=float)
 def getusertotal(userid: int) -> float:
-    pass
+    user = get_user_by_id(userid)
+    if user is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
+    
+    basket = get_basket_by_user_id(userid)
+    if basket is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználónak nincs kosara!")
+    
+    sum_of_bag = sum(basket["items"])
+
+    return JSONResponse(status_code=status.HTTP_200_OK, content=sum_of_bag)    
 
 def verify_token(api_token: str | None = Header(default=None)):
     if api_token is None:

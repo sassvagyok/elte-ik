@@ -45,26 +45,32 @@ from filereader import (
 '''
 
 # A JSON fájl elérési útja
-JSON_FILE_PATH = os.path.join(os.path.dirname(__file__), "users.json")
+USERS_FILE_PATH = os.path.join(os.path.dirname(__file__), "users.json")
+DATA_FILE_PATH = os.path.join(os.path.dirname(__file__), "data.json")
 
-def load_json() -> Dict[str, Any]:
-    with open(JSON_FILE_PATH, "r", encoding="utf-8") as f:
+# új: path megadása
+def load_json(path: str) -> Dict[str, Any]:
+    with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     return data
 
 def get_user_by_id(user_id: int) -> Dict[str, Any]:
-    data = load_json()
+    data = load_json(USERS_FILE_PATH)
 
     result = next((u for u in data if  u["id"] == user_id), None)
 
     return result
 
 def get_basket_by_user_id(user_id: int) -> List[Dict[str, Any]]:
-    pass
+    data = load_json(DATA_FILE_PATH)
+
+    result = next((b for b in data if  b["user_id"] == user_id), None)
+
+    return result
 
 def get_all_users() -> List[Dict[str, Any]]:
-    data = load_json()
+    data = load_json(USERS_FILE_PATH)
 
     return data
 

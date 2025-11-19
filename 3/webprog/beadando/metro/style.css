@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+    background-color: #EEE9EE !important;
+    font-family: "Nunito", sans-serif !important;
+}
+
+canvas#game {
+    display: block;
+}
+
+#main, #menu {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    background-color: #4D0E5F !important;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+div {
+    background-color: #EEE9EE !important;
+}
+
+div.border {
+    border-right: none;
+}
+
+div.border-rounded {
+    border: 3px solid #4D0E5F !important;
+    border-radius: 30px !important;
+    background-color: #ffffff !important;
+}
+
+p#stopwatch {
+    font-size: 250% !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+}
+
+p.pointlabel {
+    font-size: 105% !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    margin-bottom: 0px !important;
+    margin-top: 10px !important;
+}
+
+p.rpoints, p.fpoints {
+    font-size: 160% !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    margin-bottom: 0px !important;
+}
+
+.square-box {
+    align-self: stretch;
+    aspect-ratio: 1 / 1;
+    width: 90px !important;
+}
+
+h1 {
+    color: #4D0E5F !important;
+    font-size: 500% !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+p#display_username {
+    font-size: 120% !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+h1.roundtitle {
+    font-size: 220% !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+}
+
+h1.modal-title {
+    margin-bottom: 0px !important;
+}
+
+img#line {
+    width: 185px !important;
+}
+
+img#lines {
+    width: 100px !important;
+}
+
+img#cardimg {
+    width: 100px !important;
+    margin-bottom: 20px !important;
+}
+
+code {
+    color: #4D0E5F !important;
+}
+
+code#type {
+    font-size: 120% !important;
+}
+
+input {
+    border: 2px solid #DCD6DC !important;
+    border-radius: 20px !important;
+    height: 50px;
+    font-size: 100% !important;
+    margin-bottom: 50px !important;
+    width: 300px !important;
+}
+
+.form-control:focus {
+    border-color: #6E3B79 !important;
+    box-shadow: 0 8px 20px rgba(77, 14, 95, 0.25);
+    outline: none;
+}
+
+.form-control:hover {
+    border-color: #4D0E5F !important;
+    box-shadow: 0 8px 20px rgba(77, 14, 95, 0.25);
+}
+
+button:not(.btn-close, .btn-secondary) {
+    color: white !important;
+    background-color: #4D0E5F !important;
+    border: 3px solid #6E3B79 !important;
+    font-size: 140% !important;
+    width: 400px !important;
+    height: 80px !important;
+    border-radius: 27px !important;
+    font-weight: 600 !important;
+}
+
+button#card {
+    width: 100% !important;
+    height: 80px !important;
+}
+
+button#next, button#end {
+    width: 100% !important;
+    height: 80px !important;
+}
+
+button#play {
+    margin-bottom: 70px !important;
+}
+
+button#rules, button#resultsButton, button#menuback {
+    background-color: #727272 !important;
+    border: 3px solid #929292 !important;
+    font-size: 105% !important;
+    width: 200px !important;
+    height: 60px !important;
+    border-radius: 20px !important;
+    font-weight: 500 !important;
+}
+
+button#play:hover, button#card:hover {
+    background-color: #6E3B79 !important;
+    border-color: #4D0E5F !important;
+    box-shadow: 0 8px 20px rgba(77, 14, 95, 0.25);
+}
+
+button#rules:hover, button#resultsButton:hover, button#menuback:hover {
+    background-color: #929292 !important;
+    border-color: #727272 !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus-visible,
+.btn-primary:focus-visible,
+.btn-close:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba(77, 14, 95, 0.35) !important;
+    outline: none;
+}
+
+@media (min-width: 1400px) {
+    .border {
+        border-right: 3px solid #4D0E5F !important;
+    }
+}

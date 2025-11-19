@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapest Metrói</title>
+    <link rel="icon" href="media/metro.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid" id="menu">
+        <div class="row justify-content-center text-center">
+            <div class="col-12">
+                <h1>Budapest Metrói</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-12">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control text-center" placeholder="Játékosnév" aria-label="Username" aria-describedby="Username" id="username">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-12">
+                <button id="play" class="btn btn-primary">Játék indítása</button>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="mb-5">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rulesModal" id="rules">Játékszabályok</button>
+        
+                <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-2" id="rulesModalLabel">Játékszabályok</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-start">
+                                <p>Ebben a játékban a feladatod különböző szempontok szerint megtervezni Budapest metróhálózatát!</p>
+                                <p>A cél a pontgyűjtés új metrószakaszok rajzolása által: célod a legoptimálisabb metróhálózat kiépítése!</p>
+                                <p>A játék 4 körre van osztva, és minden körben 8 megállókártyát húzhatsz fel (<code>A</code> <code>B</code> <code>C</code> <code>D</code> és <code>Joker</code>), amik megmondják, hogy milyen jelölésű megállóba húzhatsz be új szakaszt.</p>
+                                <p>A szakaszbehúzás szabályai:</p>
+                                <ul>
+                                    <li>Új szakasz behúzásához kattints a kiinduló-megállóhelyre (vagy később a metróvonal egyik végére), majd a következő kattintással a megállókártyának megfelelő megállóra.</li>
+                                    <ul>
+                                        <li>Ha mégsem a kijelölt megállóból akarsz szakaszt húzni, kattints újra rá.</li>
+                                    </ul>
+                                    <li>Új szakaszt vízszintesen, függőlegesen vagy átlósan húzhatsz.</li>
+                                    <li>A szakasz nem keresztezhet egy már meglévőt, vagy haladhat át egy másik megállón.</li>
+                                    <li>Két megállóhely között csak 1 szakaszt lehet rajzolni.</li>
+                                    <li>Egy megállóhelyen több metróvonal is áthaladhat, feltéve, hogy a szakaszok nem ugyanazon az útvonalon vannak.</li>
+                                </ul>
+                                <p>Játékmenet:</p>
+                                <ul>
+                                    <li>Húzz be új szakaszt a felhúzott kártyának megfelelően, vagy kérj új kártyát a gombra kattintva.</li>
+                                    <li>Ha elérted az adott forduló utolsó körét, befejezheted azt a gombbal, majd láthatod a fordulóban megszerzett pontjaidat, és ezután új szakaszt kezdhetsz.</li>
+                                    <li>Ha minden szakasszal végeztél, láthatod a végső pontjaidat.</li>
+                                </ul>
+                                <p>Pontozás:</p>
+                                <ul>
+                                    <li>Fordulók pontozása:</li>
+                                    <ul>
+                                        <li>PK: Hány kerületet érintett ez a metróvonal</li>
+                                        <li>PM: Hány megállóhelyet érint ez a vonal abban a kerületben, ahol a legtöbb megállóhelyet érinti</li>
+                                        <li>PD: Hányszor kel át a vonal a Duna alatt</li>
+                                        <li>FP: (PK x PM) + PD : ez a fordulóban szerzett pontszámod</li>
+                                    </ul>
+                                    <li>Végső pontozás:</li>
+                                    <ul>
+                                        <li>Sum(FP): FP1 + FP2 + FP3 + FP4</li>
+                                        <li>PP: pályaudvaronként járó pont</li>
+                                        <li>CSP2: csomópontok, ahol 2 vonal találkozik * 2</li>
+                                        <li>CSP3: csomópontok, ahol 3 vonal találkozik * 5</li>
+                                        <li>CSP4: csomópontok, ahol 4 vonal találkozik * 9</li>
+                                        <li>Végső: Sum(FP) + PP + CSP2 + CSP3 + CSP4</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resultsModal" id="resultsButton">Eredmények</button>
+        
+                <div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="resultsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-2" id="resultsModalLabel">Eredmények</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-start fs-5" id="results"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="main" hidden>
+        <div class="row justify-content-center my-auto" id="row">
+            <div class="col-xxl-2 col-12 py-2 flex-column d-flex border">
+                <div class="row justify-content-center text-center">
+                    <p id="display_username">Vendég</p>
+                    <p id="stopwatch">00:00</p>
+                </div>
+                <div class="row justify-content-center text-center mt-auto mb-3">
+                    <button id="menuback" class="btn btn-primary">Vissza a menübe</button>
+                </div>
+            </div>
+            <div class="col-xxl-auto col-12 p-0 d-lg-flex justify-content-center border">
+                <canvas width="800" height="800" id="game"></canvas>
+            </div>
+            <div class="col-xxl-auto col-12 flex-grow-1 d-flex flex-column ms-3 mt-3">
+                <div class="row justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <div class="row justify-content-center">
+                            <div class="col-2 d-flex flex-column mx-2 justify-content-center align-items-center p-auto border-rounded square-box">
+                                <p class="rpoints">-</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-2 justify-content-center align-items-center border-rounded square-box">
+                                <p class="rpoints">-</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-2 justify-content-center align-items-center border-rounded square-box">
+                                <p class="rpoints">-</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-2 justify-content-center align-items-center border-rounded square-box">
+                                <p class="rpoints">-</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-2 d-flex flex-column mx-2 pb-3 square-box">
+                                <p class="pointlabel">PK</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-2 square-box">
+                                <p class="pointlabel">PM</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-2 square-box">
+                                <p class="pointlabel">PD</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-2 square-box">
+                                <p class="pointlabel">FP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <div class="row justify-content-center">
+                            <div class="col-2 d-flex flex-column mx-1 justify-content-center align-items-center p-auto border-rounded square-box">
+                                <p class="fpoints">-</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-1 justify-content-center align-items-center border-rounded square-box">
+                                <p class="fpoints">-</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-1 justify-content-center align-items-center border-rounded square-box">
+                                <p class="fpoints">-</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-1 justify-content-center align-items-center border-rounded square-box">
+                                <p class="fpoints">-</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-1 justify-content-center align-items-center border-rounded square-box">
+                                <p class="fpoints">-</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-1 justify-content-center align-items-center border-rounded square-box">
+                                <p class="fpoints">-</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-2 d-flex flex-column mx-1 square-box">
+                                <p class="pointlabel">Sum(FP)</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-1 square-box">
+                                <p class="pointlabel">PP</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-1 square-box">
+                                <p class="pointlabel">CSP2</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-1 square-box">
+                                <p class="pointlabel">CSP3</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-1 square-box">
+                                <p class="pointlabel">CSP4</p>
+                            </div>
+                            <div class="col-2 d-flex flex-column mx-1 square-box">
+                                <p class="pointlabel">Végső</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-auto">
+                    <div class="col-4 d-flex flex-column">
+                        <div class="row border-rounded py-4 justify-content-center">
+                            <img id="line" src="" alt="" class="img-fluid mt-auto">
+                        </div>
+                    </div>
+                    <div class="col-7 d-flex flex-column mx-auto">
+                        <div class="row h-100 border-rounded align-items-center py-4 justify-content-center">
+                            <img id="lines" src="" alt="" class="img-fluid mt-auto">
+                            <img id="lines" src="" alt="" class="img-fluid mt-auto">
+                            <img id="lines" src="" alt="" class="img-fluid mt-auto">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center my-3">
+                    <div class="col-4 d-flex flex-column p-3 border-rounded">
+                        <img id="cardimg" src="" alt="" class="img-fluid mx-auto mt-auto">
+                        <button id="card" class="btn btn-primary">Új kártya</button>
+                    </div>
+                    <div class="col-8 d-flex flex-column p-3 mt-auto align-items-center">
+                        <div class="row w-100">
+                            <div class="col-12 d-flex flex-column align-items-center mb-5">
+                                <h1 class="roundtitle">1. kör</h1>
+                            </div>  
+                            <div class="col-12 d-flex flex-column align-items-center">
+                                <button id="next" class="btn btn-primary">Következő forduló</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

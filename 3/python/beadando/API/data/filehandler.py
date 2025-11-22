@@ -1,13 +1,7 @@
 import json
 from typing import Dict, Any
-import os
-from filereader import (
-    get_user_by_id,
-    get_basket_by_user_id,
-    get_all_users,
-    get_total_price_of_basket
-)
-from schemas.schema import User, Basket, Item
+from data.filereader import get_user_by_id
+from schemas.schema import Item
 
 '''
 Útmutató a fájl függvényeinek a használatához
@@ -65,15 +59,17 @@ from filehandler import (
 '''
 
 # A JSON fájl elérési útja
-USERS_FILE_PATH = os.path.join(os.path.dirname(__file__), "users.json")
-DATA_FILE_PATH = os.path.join(os.path.dirname(__file__), "data.json")
+USERS_FILE_PATH = "data/users.json"
+DATA_FILE_PATH = "data/data.json"
 
+# változatás: path megadása, mert 2 json fájl van
 def load_json(path: str) -> Dict[str, Any]:
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     return data
 
+# változatás: path megadása, mert 2 json fájl van
 def save_json(path: str, data: Dict[str, Any]) -> None:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4)
@@ -108,7 +104,7 @@ def add_item_to_basket(user_id: int, item: Dict[str, Any]) -> None:
     if user is None:
         raise ValueError("A felhasználó nem található!")
     
-    basket = get_basket_by_user_id(user_id)
+    basket = next((b for b in data if b["user_id"] == user_id), None)
 
     if basket is None:
         raise ValueError("A felhasználónak nincs kosara!")
@@ -129,14 +125,15 @@ def update_item(user_id: int, item_id: int, updateItem: Item) -> None:
     if user is None:
         raise ValueError("A felhasználó nem található!")
     
-    basket = get_basket_by_user_id(user_id)
+    basket = next((b for b in data if b["user_id"] == user_id), None)
 
     if basket is None:
         raise ValueError("A felhasználónak nincs kosara!")
 
     item = next((i for i in basket["items"] if i["item_id"] == item_id), None)
     
-    if item:
+    if item is not None:
+        item["item_id"] = updateItem.item_id
         item["name"] = updateItem.name
         item["brand"] = updateItem.brand
         item["price"] = updateItem.price
@@ -153,7 +150,7 @@ def delete_item(user_id: int, item_id: int) -> None:
     if user is None:
         raise ValueError("A felhasználó nem található!")
     
-    basket = get_basket_by_user_id(user_id)
+    basket = next((b for b in data if b["user_id"] == user_id), None)
 
     if basket is None:
         raise ValueError("A felhasználónak nincs kosara!")

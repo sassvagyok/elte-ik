@@ -1,13 +1,13 @@
 from schemas.schema import User, Basket, Item
 from fastapi.responses import JSONResponse, RedirectResponse
-from fastapi import FastAPI, HTTPException, Request, Response, Cookie, Header, status
+from fastapi import FastAPI, HTTPException, Request, Response, Cookie, status
 from fastapi import APIRouter
 from data.filereader import (
     get_user_by_id,
     get_basket_by_user_id,
     get_all_users,
     get_total_price_of_basket,
-    read_token
+    verify_token
 )
 from data.filehandler import (
     add_user,
@@ -33,17 +33,27 @@ from data.filehandler import (
 
 routers = APIRouter()
 
-@routers.post('/adduser', response_model=User)
-def adduser(user: User, api_token: str | None = Header(default=None)) -> User:
-    verify_token(api_token)
+# Új felhasználó létrehozása és hozzáadása
+@routers.post('/adduser', response_model=User, summary="Új felhasználó hozzáadása", tags=["User"])
+def adduser(user: User, api_token: str) -> User:
+    """
+    Új felhasználó hozzáadása, az eddigiektől eltérő azonosítóval.
+    """
+    if verify_token(api_token) is False:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Érvénytelen token!")
     
     add_user(user.model_dump())
 
     return JSONResponse(status_code=status.HTTP_201_CREATED, content=user.model_dump())
 
-@routers.post('/addshoppingbag', response_model=str)
-def addshoppingbag(userid: int, api_token: str | None = Header(default=None)) -> str:
-    verify_token(api_token)
+# Új kosár létrehozása egy felhasználónak
+@routers.post('/addshoppingbag', response_model=str, summary="Kosár rendelése egy felhasználóhoz", tags=["Bag"])
+def addshoppingbag(userid: int, api_token: str) -> str:
+    """
+    Új kosár rendelése egy létező felhasználóhoz.
+    """
+    if verify_token(api_token) is False:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Érvénytelen token!")
 
     user = get_user_by_id(userid)
     if user is None:
@@ -64,8 +74,12 @@ def addshoppingbag(userid: int, api_token: str | None = Header(default=None)) ->
 
     return JSONResponse(status_code=status.HTTP_201_CREATED, content=new_basket)
 
-@routers.post('/additem', response_model=Basket)
+# Új termék hozzáadása egy kosárhoz
+@routers.post('/additem', response_model=Basket, summary="Termék hozzáadása egy kosárhoz", tags=["Bag"])
 def additem(userid: int, item: Item) -> Basket:
+    """
+    Új termék hozzáadása egy felhasználó kosarához.
+    """
     user = get_user_by_id(userid)
     if user is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
@@ -80,9 +94,12 @@ def additem(userid: int, item: Item) -> Basket:
 
     return JSONResponse(status_code=status.HTTP_201_CREATED, content=basket)
 
-
-@routers.put('/updateitem', response_model=Basket)
+# Egy kosárban lévő termék módosítása
+@routers.put('/updateitem', response_model=Basket, summary="Kosárban lévő termék módosítása", tags=["Bag"])
 def updateitem(userid: int, itemid: int, updateItem: Item) -> Basket:
+    """
+    Egy felhasználó kosárban lévő termék módosítása.
+    """
     user = get_user_by_id(userid)
     if user is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
@@ -102,8 +119,12 @@ def updateitem(userid: int, itemid: int, updateItem: Item) -> Basket:
 
     return JSONResponse(status_code=status.HTTP_200_OK, content=basket)
 
-@routers.delete('/deleteitem', response_model=Basket)
+# Egy kosárban lévő termék törlése
+@routers.delete('/deleteitem', response_model=Basket, summary="Kosárban lévő termék törlése", tags=["Bag"])
 def deleteitem(userid: int, itemid: int) -> Basket:
+    """
+    Egy felhasználó kosárban lévő termék törlése.
+    """
     user = get_user_by_id(userid)
     if user is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
@@ -123,9 +144,14 @@ def deleteitem(userid: int, itemid: int) -> Basket:
 
     return JSONResponse(status_code=status.HTTP_200_OK, content=basket)
 
-@routers.get('/user', response_model=User)
-def user(userid: int, api_token: str | None = Header(default=None)) -> User:
-    verify_token(api_token)
+# Egy felhasználó lekérdezése
+@routers.get('/user', response_model=User, summary="Felhasználó lekérdezése", tags=["User"])
+def user(userid: int, api_token: str) -> User:
+    """
+    Egy létező felhasználó adatainak lekérdezése.
+    """
+    if verify_token(api_token) is False:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Érvénytelen token!")
     user = get_user_by_id(userid)
 
     if user is None:
@@ -133,9 +159,15 @@ def user(userid: int, api_token: str | None = Header(default=None)) -> User:
 
     return JSONResponse(status_code=status.HTTP_200_OK, content=user)
 
-@routers.get('/users', response_model=list[User])
-def users(api_token: str | None = Header(default=None)) -> list[User]:
-    verify_token(api_token)
+# Az összes felhasználó lekérdezése
+@routers.get('/users', response_model=list[User], summary="Az összes felhasználó lekérdezése", tags=["User"])
+def users(api_token: str) -> list[User]:
+    """
+    Az összes felhasználó adatainak lekérdezése.
+    """
+    if verify_token(api_token) is False:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Érvénytelen token!")
+    
     users = get_all_users()
 
     if len(users) == 0:
@@ -143,8 +175,12 @@ def users(api_token: str | None = Header(default=None)) -> list[User]:
 
     return JSONResponse(status_code=status.HTTP_200_OK, content=users)
 
-@routers.get('/shoppingbag', response_model=list[Item])
+# Egy kosár lekérdezése
+@routers.get('/shoppingbag', response_model=list[Item], summary="Felhasználó kosarának lekérdezése", tags=["Bag"])
 def shoppingbag(userid: int) -> list[Item]:
+    """
+    Egy felhasználó kosarának lekérdezése.
+    """
     user = get_user_by_id(userid)
     if user is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
@@ -155,8 +191,12 @@ def shoppingbag(userid: int) -> list[Item]:
     
     return JSONResponse(status_code=status.HTTP_200_OK, content=basket["items"])
 
-@routers.get('/getusertotal', response_model=float)
+# Egy kosár termékeinek összegének lekérdezése
+@routers.get('/getusertotal', response_model=float, summary="Kosárban található termékek összegének lekérdezése", tags=["Bag"])
 def getusertotal(userid: int) -> float:
+    """
+    Egy felhasználó kosarában található termékek összegének lekérdezése.
+    """
     user = get_user_by_id(userid)
     if user is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználó nem található!")
@@ -165,16 +205,6 @@ def getusertotal(userid: int) -> float:
     if basket is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="A felhasználónak nincs kosara!")
     
-    sum_of_bag = sum(basket["items"])
+    sum_of_bag = get_total_price_of_basket(userid)
 
-    return JSONResponse(status_code=status.HTTP_200_OK, content=sum_of_bag)    
-
-def verify_token(api_token: str | None = Header(default=None)):
-    if api_token is None:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Hiányzó token!")
-    
-    server_token = read_token()
-    if api_token != server_token:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Érvénytelen token!")
-    return True
-
+    return JSONResponse(status_code=status.HTTP_200_OK, content=sum_of_bag)

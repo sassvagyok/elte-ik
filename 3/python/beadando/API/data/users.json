@@ -15,28 +15,8 @@
         "email": "karoly@pearparadise.com"
     },
     {
-        "id": 10,
-        "name": "string",
-        "email": "makk@makk.com"
-    },
-    {
-        "id": 11,
-        "name": "string",
-        "email": "makk@makk.com"
-    },
-    {
-        "id": 101,
-        "name": "string",
-        "email": "makk@makk.com"
-    },
-    {
-        "id": 143423,
-        "name": "string",
-        "email": "string@makk.com"
-    },
-    {
-        "id": 14354423,
-        "name": "string",
-        "email": "string@makk.com"
+        "id": 5,
+        "name": "Kis Karcsi",
+        "email": "kk@gmail.com"
     }
 ]

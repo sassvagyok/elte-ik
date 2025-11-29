@@ -33,6 +33,8 @@
         <dd><?= implode(", ", $contact["emails"]) ?></dd>
     </dl>
     <a href="edit.php?id=<?= $contact["id"] ?>">Módosít</a><br>
-    <a href="delete.php?id=<?= $contact["id"] ?>">Törlés</a>
+    <form action="delete.php" method="post">
+        <button name="id" value="<?= $contact["id"] ?>">Töröl</button>
+    </form>
 </body>
 </html>

@@ -68,7 +68,6 @@
             $contact["name"]=$data["name"];
             $contact["emails"]=$data["emails"];
 
-            $cs = new ContactStorage();
             $cs->update($id, $contact);
             header("Location: index.php");
             exit;

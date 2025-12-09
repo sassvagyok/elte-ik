@@ -185,7 +185,7 @@ public class GameEngine extends JPanel {
             JOptionPane.OK_CANCEL_OPTION
         );
         
-        if (option == JOptionPane.OK_OPTION && option != 0) {
+        if (option == JOptionPane.OK_OPTION) {
             String playerName = nameField.getText().trim();
             if (!playerName.isEmpty()) {
                 try {

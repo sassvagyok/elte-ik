@@ -1,0 +1,20 @@
+{
+    "692f019d56c5b": {
+        "username": "a",
+        "password": "$2y$12$Wg9nleatKMXXNFSMPVTqbOelU.X\/6jKn\/SdB84tlGBTogCwLw0Zy.",
+        "fullname": "a",
+        "roles": [
+            "user"
+        ],
+        "id": "692f019d56c5b"
+    },
+    "692f021b125f1": {
+        "username": "x",
+        "password": "$2y$12$rm3R8n8kp7fDwrmMdGv.aun7HNI3SqUn24OlnHFToiEggeSC2.EfW",
+        "fullname": "x",
+        "roles": [
+            "user"
+        ],
+        "id": "692f021b125f1"
+    }
+}

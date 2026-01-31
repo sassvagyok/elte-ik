@@ -1,4 +1,7 @@
-| 3. félév |[Programozási technológia](3/progtech/) | [Python](3/python/) | [Webprogramozás](3/webprog/) |
+| 4. félév | [Adatbázisok I.](4/adatbazis1/) | [Kliensoldali webprogramozás](4/kwebprog/) | [Operációs rendszerek](4/oprend/) | [Szoftvertechnológia](4/szoftech/) | [Szerveroldali webprogramozás](4/szwebprog/) |
+| :----: | :----: | :----: | :----: | :----: | :----: |
+
+| 3. félév | [Programozási technológia](3/progtech/) | [Python](3/python/) | [Webprogramozás](3/webprog/) |
 | :----: | :----: | :----: | :----: |
 | **Gyakorlat** | [Gyakorlat](3/progtech/gyakorlat/) | [Gyakorlat](3/python/gyakorlat/) | [Gyakorlat](3/webprog/gyakorlat/) |
 | **Házi/Plusz** | - | [Szorgalmi](3/python/szorgalmi/) | [Szorgalmi](3/webprog/szorgalmi/) |

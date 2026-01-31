@@ -1,0 +1,1 @@
+# Adatbázisok I. Gy (IP-18AB1G)

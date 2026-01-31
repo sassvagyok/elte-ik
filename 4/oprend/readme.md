@@ -1,0 +1,1 @@
+# Operációs rendszerek Ea+Gy (IP-18OPREG)

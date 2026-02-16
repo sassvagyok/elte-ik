@@ -3,3 +3,5 @@ __pycache__/
 build/
 private/
 dist/
+node_modules/
+vendor/

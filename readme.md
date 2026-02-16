@@ -1,5 +1,6 @@
-| 4. félév | [Adatbázisok I.](4/adatbazis1/) | [Kliensoldali webprogramozás](4/kwebprog/) | [Operációs rendszerek](4/oprend/) | [Szoftvertechnológia](4/szoftech/) | [Szerveroldali webprogramozás](4/szwebprog/) |
+| 4. félév | [Adatbázisok I.](4/ab1/) | [Kliensoldali webprogramozás](4/kwebprog/) | [Operációs rendszerek](4/oprend/) | [Szoftvertechnológia](4/szoftech/) | [Szerveroldali webprogramozás](4/szwebprog/) |
 | :----: | :----: | :----: | :----: | :----: | :----: |
+| **Gyakorlat** | [Gyakorlat](4/ab1/gyakorlat/) | [Gyakorlat](4/kwebprog/gyakorlat/) | [Gyakorlat](4/oprend/gyakorlat/) | - | [Gyakorlat](4/szwebprog/gyakorlat/) |
 
 | 3. félév | [Programozási technológia](3/progtech/) | [Python](3/python/) | [Webprogramozás](3/webprog/) |
 | :----: | :----: | :----: | :----: |

@@ -1,0 +1,12 @@
+1	Somló	Somlóvásárhely	Déli T1	Olaszrizling	500	fehér	40
+2	Somló	Somlóvásárhely	Északi T2	Juhfark	320	fehér	15
+3	Badacsony	Badacsonytomaj	Keleti B1	Kéknyelű	410	fehér	62
+4	Badacsony	Badacsonylábdihegy	Nyugati B3	Szürkebarát	275	fehér	28
+5	Eger	Eger-Tikhegy	Középső E2	Egri Bikavér	500	fehér	55
+6	Eger	Eger-Szépasszony-völgy	Déli E4	Kékfrankos	480	vörös	33
+7	Tokaj	Mád	Királymező K1	Furmint	700	fehér	18
+8	Tokaj	Tállya	Nyulászó K3	Hárslevelű	390	fehér	47
+9	Villány	Villánykövesd	Déli V1	Cabernet Sauvignon	560	vörös	72
+10	Villány	Palkonya	Palkonyai V2	Merlot	310	vörös	9
+12	Szekszárd	Szekszárd-Baranya	Bati-dűlő S1	Kadarka	290	vörös	21
+13	Teszt	Teszt	Teszt	Teszt	301	vörös	13

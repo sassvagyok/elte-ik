@@ -1,0 +1,96 @@
+SELECT * FROM dolgozo;
+
+CREATE OR REPLACE PROCEDURE print_dolgozo AS
+    CURSOR dolgozo_cursor IS SELECT * FROM dolgozo;
+    dolgozo_sor dolgozo%rowtype;
+BEGIN
+    FOR dolgozo_sor IN dolgozo_cursor LOOP
+        dbms_output.put_line('DNEV: ' || dolgozo_sor.dnev);
+    END LOOP;
+END;
+
+CREATE OR REPLACE PROCEDURE print_osztaly_20_1 AS
+    CURSOR dolgozo_cursor IS SELECT * FROM dolgozo;
+    dolgozo_sor dolgozo%rowtype;
+BEGIN
+    FOR dolgozo_sor IN dolgozo_cursor LOOP
+        IF dolgozo_sor.oazon = 20 AND dolgozo_sor.fizetes > 200 THEN
+            dbms_output.put_line('DNEV: ' || dolgozo_sor.dnev);
+        END IF;
+    END LOOP;
+END;
+
+
+CREATE OR REPLACE PROCEDURE print_osztaly_20_2 AS
+    CURSOR dolgozo_cursor IS SELECT * FROM dolgozo WHERE oazon = 20 AND fizetes > 2000;
+    dolgozo_sor dolgozo%rowtype;
+BEGIN
+    FOR dolgozo_sor IN dolgozo_cursor LOOP
+        dbms_output.put_line('DNEV: ' || dolgozo_sor.dnev);
+    END LOOP;
+END;
+
+SELECT * FROM dolgozo WHERE oazon = 20 ORDER BY dnev;
+SELECT * FROM dolgozo NATURAL JOIN osztaly;
+
+CREATE OR REPLACE PROCEDURE print_foglalkozasok(osztaly_nev VARCHAR2) AS
+    CURSOR dolgozo_cursor IS SELECT *
+                    FROM dolgozo NATURAL JOIN osztaly
+                    WHERE onev = osztaly_nev
+                    ORDER BY dnev;
+    dolgozo_sor dolgozo_cursor%rowtype;
+    eredmeny VARCHAR2(300) := '';
+BEGIN
+    FOR dolgozo_sor IN dolgozo_cursor LOOP
+        eredmeny := eredmeny || dolgozo_sor.foglalkozas || '-';
+    END LOOP;
+    eredmeny := SUBSTR(eredmeny, 1, LENGTH(eredmeny) - 1);
+    dbms_output.put_line(eredmeny);
+END;
+/
+CALL print_foglalkozasok('RESEARCH');
+/
+
+CREATE OR REPLACE PROCEDURE print_kor(kor NUMBER) AS
+    hibas_kor EXCEPTION;
+BEGIN
+    IF kor < 0 OR kor > 100 THEN
+        RAISE hibas_kor;
+    dbms_output.put_line('Kor: ' || kor);
+EXCEPTION
+    WHEN hibas_kor THEN
+        dbms_output.put_line('hibas kor');
+    WHEN others THEN
+        dbms_output.put_line('minden mas hiba');
+END;
+    
+/
+
+CALL print_kor(10);
+
+/
+
+
+SELECT * FROM dolgozo2;
+UPDATE dolgozo2 SET fizetes = fizetes + 100 WHERE oazon = 20;
+
+CREATE OR REPLACE PROCEDURE fizetes_emeles(osztaly_azonosito NUMBER) AS
+    CURSOR d_curs IS SELECT * FROM dolgozo2 WHERE oazon = osztaly_azonosito;
+    d_sor d_curs%rowtype;
+BEGIN
+    FOR d_sor IN d_curs LOOP
+        UPDATE dolgozo2 SET fizetes = fizetes + 100 WHERE dkod = d_sor.dkod;
+    END LOOP;
+END;
+
+CREATE OR REPLACE PROCEDURE fizetes_emeles2(osztaly_nev VARCHAR2) AS
+    CURSOR dolgozok IS SELECT *
+                    FROM dolgozo2 NATURAL JOIN osztaly
+                    WHERE onev = osztaly_nev;
+    dolgozo_sor dolgozok%rowtype;
+BEGIN
+    FOR dolgozo_sor IN dolgozok LOOP
+        UPDATE dolgozo2 SET fizetes = fizetes + 1000 WHERE dkod = dolgozo_sor.dkod;
+    END LOOP;
+END;
+        

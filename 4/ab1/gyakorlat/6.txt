@@ -1,0 +1,34 @@
+SELECT nev
+FROM szeret
+GROUP BY nev
+HAVING COUNT(*) =
+    (SELECT DISTINCT COUNT(DISTINCT gyumolcs) FROM szeret);
+
+SELECT min_fizetes, kategoria
+FROM (SELECT MIN(f.fizetes) min_fizetes
+    FROM dolgozo f JOIN dolgozo b ON f.dkod = b.fonoke)
+    JOIN fiz_kategoria ON min_fizetes BETWEEN also AND felso;
+    
+SELECT TO_CHAR(belepes, 'Month') hónap, COUNT(*) darab
+FROM dolgozo
+GROUP BY TO_CHAR(belepes, 'Month')
+HAVING COUNT(*) >= 2;
+
+SELECT oazon, COUNT(*) dolgozok, AVG(fizetes) atlag_fizetes
+FROM dolgozo
+WHERE oazon IS NOT NULL
+GROUP BY oazon
+HAVING AVG(fizetes) > 1500 AND COUNT(*) >= 3
+ORDER BY AVG(fizetes) DESC;
+
+SELECT kategoria, COUNT(*) dolgozok, AVG(fizetes) atlag_fiezetes
+FROM dolgozo JOIN fiz_kategoria ON fizetes BETWEEN also AND felso
+GROUP BY kategoria
+HAVING COUNT(*) >= 2 AND AVG(fizetes) < 2000;
+
+SELECT oazon, SUM(fizetes) osszfiz
+FROM dolgozo
+WHERE foglalkozas IN ('PRESIDENT', 'MANAGER') AND oazon IS NOT NULL
+GROUP BY oazon
+ORDER BY osszfiz DESC
+FETCH FIRST 1 ROWS ONLY;

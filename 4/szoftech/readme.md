@@ -1,1 +1,0 @@
-# Szoftvertechnológia Ea+GY (F) (IP-18cSZTEG)

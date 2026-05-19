@@ -1,0 +1,27 @@
+SELECT TO_CHAR(LAST_DAY(belepes), 'Day') nap
+FROM dolgozo
+WHERE dnev = 'KING';
+
+SELECT dnev, fizetes, RPAD(' ', TRUNC(fizetes / 1000) + 1, '#')
+FROM dolgozo
+ORDER BY 2 DESC;
+
+SELECT '(' || b.dnev || ', ' || f.dnev || ')' név
+FROM dolgozo b JOIN dolgozo f
+ON b.fonoke = f.dkod
+WHERE LENGTH(b.dnev) = LENGTH(f.dnev);
+
+CREATE TABLE fiz_kategoria AS SELECT * FROM kotroczo.fiz_kategoria;
+SELECT * FROM fiz_kategoria;
+
+SELECT dnev
+FROM dolgozo JOIN fiz_kategoria
+ON fizetes BETWEEN also AND felso
+WHERE kategoria = 3;
+
+SELECT * FROM osztaly;
+SELECT * FROM dolgozo;
+
+SELECT *
+FROM dolgozo NATURAL JOIN osztaly JOIN fiz_kategoria ON fizetes BETWEEN also AND felso
+WHERE onev LIKE 'C' AND kategoria >= 1;'

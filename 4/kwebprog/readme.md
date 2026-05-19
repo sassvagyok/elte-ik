@@ -1,1 +1,0 @@
-# Kliensoldali webprogramozás Ea+Gy (IP-18KVIKWPROGEG)

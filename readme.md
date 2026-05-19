@@ -1,6 +1,7 @@
-| 4. félév | [Adatbázisok I.](4/ab1/) | [Kliensoldali webprogramozás](4/kwebprog/) | [Operációs rendszerek](4/oprend/) | [Szoftvertechnológia](4/szoftech/) | [Szerveroldali webprogramozás](4/szwebprog/) |
-| :----: | :----: | :----: | :----: | :----: | :----: |
-| **Gyakorlat** | [Gyakorlat](4/ab1/gyakorlat/) | [Gyakorlat](4/kwebprog/gyakorlat/) | [Gyakorlat](4/oprend/gyakorlat/) | - | [Gyakorlat](4/szwebprog/gyakorlat/) |
+| 4. félév | [Adatbázisok I.](4/ab1/) | [Operációs rendszerek](4/oprend/) | [Szerveroldali webprogramozás](4/szwebprog/) |
+| :----: | :----: | :----: | :----: |
+| **Gyakorlat** | [Gyakorlat](4/ab1/gyakorlat/) | [Gyakorlat](https://github.com/NemesLaszlo/Operating-Systems-2026) | [Gyakorlat](https://github.com/blankalang/szerver_1_csoport) |
+| **Beadandó** | - | [Beadandó](4/oprend/beadando/) | [Beadandó](4/szwebprog/beadando/) |
 
 | 3. félév | [Programozási technológia](3/progtech/) | [Python](3/python/) | [Webprogramozás](3/webprog/) |
 | :----: | :----: | :----: | :----: |
